@@ -78,7 +78,7 @@ const AboutPage: React.FC = () => {
             >
               <div className="w-full h-[450px] rounded-2xl overflow-hidden">
                 <img 
-                  src="/placeholder.svg?height=450&width=600" 
+                  src="/rectangle-21.png" 
                   alt="Students collaborating" 
                   className="w-full h-full object-cover"
                 />
