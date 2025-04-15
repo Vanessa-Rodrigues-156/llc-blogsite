@@ -248,7 +248,7 @@ export const CoursesSection = (): JSX.Element => {
   const indicators = Array.from({ length: totalPages }, (_, index) => index);
 
   return (
-    <section id="courses" className="relative w-full py-16 px-4 max-w-7xl mx-auto">
+    <section id="courses" className="relative w-full max-w-8xl px-2 mx-auto">
       <div className="flex flex-col items-center mb-16">
         <h2 className="font-poppins text-4xl font-bold mb-4 text-center">
           <span className="text-[#2f327d]">Courses </span>
@@ -262,7 +262,7 @@ export const CoursesSection = (): JSX.Element => {
         </p>
       </div>
 
-      <div className="relative overflow-hidden">
+      <div className="relative py-10 px-14 overflow-hidden">
         <AnimatePresence mode="wait">
           <motion.div
             key={currentPage}
