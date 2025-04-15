@@ -255,7 +255,7 @@ export const CoursesSection = (): JSX.Element => {
           <span className="text-[#f48c06]">we provide.</span>
         </h2>
         <p className="font-poppins text-2xl text-center leading-[43.2px] max-w-2xl">
-          Student must verify the life skill art course offered
+          Student must verify the LLC course offered
           <br /> by the institute in a particular semester&nbsp;&nbsp;and the
           timing
           <br /> of the course before registration
