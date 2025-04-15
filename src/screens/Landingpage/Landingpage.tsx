@@ -2,10 +2,10 @@ import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { AboutLiberalLearningSection } from "./sections/AboutLiberalLearningSection";
 import { CoursesSection } from "./sections/CoursesSection/CoursesSection";
-import { FooterSection } from "./sections/FooterSection/FooterSection";
 import { HeroSection } from "./sections/HeroSection";
 import { LatestNewsSection } from "./sections/LatestNewsSection";
 import { MainContentSection } from "./sections/MainContentSection";
+import Footer from "../../components/Footer/Footer";
 
 export const Landingpage = (): JSX.Element => {
   useEffect(() => {
@@ -52,7 +52,7 @@ export const Landingpage = (): JSX.Element => {
         <div className="animate-on-scroll">
           <LatestNewsSection />
         </div>
-        <FooterSection />
+        <Footer />
       </div>
     </motion.div>
   );

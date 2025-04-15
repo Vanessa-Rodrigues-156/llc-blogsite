@@ -27,6 +27,7 @@ export const CoursesSection = (): JSX.Element => {
   // Course data with all the specified courses
   const courses = [
     {
+      id: "sketching",
       title: "Sketching",
       description:
         "Develop your artistic skills through this hands-on sketching course. Learn various techniques from basic line drawing to advanced shading, helping you express creativity and enhance visual communication skills.",
@@ -34,8 +35,10 @@ export const CoursesSection = (): JSX.Element => {
       iconBgColor: "bg-[#3364e1]",
       buttonBgColor: "bg-[#3364e1]",
       titleColor: "text-[#0d104d]",
+      image: "/courses/art-course.jpg",
     },
     {
+      id: "personality-development",
       title: "Personality Development and People Management",
       description:
         "Build confidence, improve communication, and develop leadership skills that will help you excel in both personal and professional spheres. Learn effective techniques to manage teams and foster positive relationships.",
@@ -43,8 +46,10 @@ export const CoursesSection = (): JSX.Element => {
       iconBgColor: "bg-[#f48c06]",
       buttonBgColor: "bg-[#f48c06]",
       titleColor: "text-[#faa332]",
+      image: "/courses/leadership-course.jpg",
     },
     {
+      id: "work-life-balance",
       title: "Work Life Balance",
       description:
         "Discover strategies to harmonize professional responsibilities with personal well-being. This course provides practical tools to enhance productivity while maintaining mental health and enjoying fulfilling relationships.",
@@ -52,8 +57,10 @@ export const CoursesSection = (): JSX.Element => {
       iconBgColor: "bg-[#3364e1]",
       buttonBgColor: "bg-[#3364e1]",
       titleColor: "text-[#0d104d]",
+      image: "/courses/wellbeing-course.jpg",
     },
     {
+      id: "first-aid-self-defence",
       title: "First Aid and Self Defence",
       description:
         "Learn essential life-saving techniques and self-protection methods. This practical course equips you with the knowledge to respond effectively in emergencies and protect yourself in potentially dangerous situations.",
@@ -61,8 +68,10 @@ export const CoursesSection = (): JSX.Element => {
       iconBgColor: "bg-[#f48c06]",
       buttonBgColor: "bg-[#f48c06]",
       titleColor: "text-[#faa332]",
+      image: "/courses/first-aid-course.jpg",
     },
     {
+      id: "fire-safety",
       title: "Fire Safety and Electronic Security",
       description:
         "Understand fire prevention, detection, and suppression techniques alongside modern electronic security systems. Gain practical knowledge on protecting spaces and people from various hazards.",
@@ -70,8 +79,10 @@ export const CoursesSection = (): JSX.Element => {
       iconBgColor: "bg-[#3364e1]",
       buttonBgColor: "bg-[#3364e1]",
       titleColor: "text-[#0d104d]",
+      image: "/courses/safety-course.jpg",
     },
     {
+      id: "sports-technology",
       title: "Sports Technology",
       description:
         "Explore the cutting-edge technologies revolutionizing sports performance, analysis, and training. Learn how data analytics, wearable tech, and innovative equipment are shaping the future of athletics.",
@@ -79,8 +90,10 @@ export const CoursesSection = (): JSX.Element => {
       iconBgColor: "bg-[#f48c06]",
       buttonBgColor: "bg-[#f48c06]",
       titleColor: "text-[#faa332]",
+      image: "/courses/sports-tech-course.jpg",
     },
     {
+      id: "athletics",
       title: "Athletics",
       description:
         "Develop fundamental athletic skills through comprehensive training in various track and field disciplines. Improve strength, speed, endurance, and technique while fostering sportsmanship and competitive spirit.",
@@ -88,8 +101,10 @@ export const CoursesSection = (): JSX.Element => {
       iconBgColor: "bg-[#3364e1]",
       buttonBgColor: "bg-[#3364e1]",
       titleColor: "text-[#0d104d]",
+      image: "/courses/athletics-course.jpg",
     },
     {
+      id: "aerobics-fitness",
       title: "Aerobics and Fitness",
       description:
         "Enhance cardiovascular health, strength, and flexibility through dynamic aerobic exercises and fitness routines. Learn proper techniques for effective workouts that improve overall physical well-being.",
@@ -97,8 +112,10 @@ export const CoursesSection = (): JSX.Element => {
       iconBgColor: "bg-[#f48c06]",
       buttonBgColor: "bg-[#f48c06]",
       titleColor: "text-[#faa332]",
+      image: "/courses/fitness-course.jpg",
     },
     {
+      id: "photography",
       title: "Fundamentals of Photography",
       description:
         "Master the technical and creative aspects of photography. From understanding camera settings to composition principles, this course helps you capture compelling images and develop your unique visual style.",
@@ -106,8 +123,10 @@ export const CoursesSection = (): JSX.Element => {
       iconBgColor: "bg-[#3364e1]",
       buttonBgColor: "bg-[#3364e1]",
       titleColor: "text-[#0d104d]",
+      image: "/courses/photography-course.jpg",
     },
     {
+      id: "cinematography",
       title: "Cinematography",
       description:
         "Discover the art of visual storytelling through motion pictures. Learn camera techniques, lighting, composition, and movement to create compelling visual narratives for film and digital media.",
@@ -115,8 +134,10 @@ export const CoursesSection = (): JSX.Element => {
       iconBgColor: "bg-[#f48c06]",
       buttonBgColor: "bg-[#f48c06]",
       titleColor: "text-[#faa332]",
+      image: "/courses/cinematography-course.jpg",
     },
     {
+      id: "music-appreciation",
       title: "Music Appreciation and Composition",
       description:
         "Develop a deeper understanding of musical elements, genres, and history while learning fundamental composition techniques. Enhance your ability to appreciate, analyze, and create diverse musical expressions.",
@@ -124,8 +145,10 @@ export const CoursesSection = (): JSX.Element => {
       iconBgColor: "bg-[#3364e1]",
       buttonBgColor: "bg-[#3364e1]",
       titleColor: "text-[#0d104d]",
+      image: "/courses/music-course.jpg",
     },
     {
+      id: "garden-design",
       title: "Garden Design and Maintenance",
       description:
         "Learn principles of landscape design and plant care techniques. This course combines theory with hands-on practice to help you create and maintain beautiful, sustainable garden spaces.",
@@ -133,8 +156,10 @@ export const CoursesSection = (): JSX.Element => {
       iconBgColor: "bg-[#f48c06]",
       buttonBgColor: "bg-[#f48c06]",
       titleColor: "text-[#faa332]",
+      image: "/courses/gardening-course.jpg",
     },
     {
+      id: "social-media",
       title: "Managing Social Media",
       description:
         "Master strategies for effective social media management across platforms. Learn content creation, community engagement, analytics, and campaign planning to build a meaningful online presence.",
@@ -142,8 +167,10 @@ export const CoursesSection = (): JSX.Element => {
       iconBgColor: "bg-[#3364e1]",
       buttonBgColor: "bg-[#3364e1]",
       titleColor: "text-[#0d104d]",
+      image: "/courses/social-media-course.jpg",
     },
     {
+      id: "server-network",
       title: "Server and Network Maintenance",
       description:
         "Gain practical experience in managing server infrastructure and network systems. This hands-on course covers troubleshooting, security protocols, and optimization techniques essential for IT operations.",
@@ -151,8 +178,10 @@ export const CoursesSection = (): JSX.Element => {
       iconBgColor: "bg-[#f48c06]",
       buttonBgColor: "bg-[#f48c06]",
       titleColor: "text-[#faa332]",
+      image: "/courses/network-course.jpg",
     },
     {
+      id: "electrical-safety",
       title: "Electrical Safety",
       description:
         "Learn crucial principles and practices of electrical safety in various environments. This course provides essential knowledge about hazard identification, prevention strategies, and emergency responses.",
@@ -160,8 +189,10 @@ export const CoursesSection = (): JSX.Element => {
       iconBgColor: "bg-[#3364e1]",
       buttonBgColor: "bg-[#3364e1]",
       titleColor: "text-[#0d104d]",
+      image: "/courses/electrical-course.jpg",
     },
     {
+      id: "mentoring-school-children",
       title: "Mentoring of School Children",
       description:
         "Develop effective mentoring skills to positively impact young students' academic and personal growth. Learn to build trust, provide guidance, and foster development through supportive relationships.",
@@ -169,8 +200,10 @@ export const CoursesSection = (): JSX.Element => {
       iconBgColor: "bg-[#f48c06]",
       buttonBgColor: "bg-[#f48c06]",
       titleColor: "text-[#faa332]",
+      image: "/courses/mentoring-course.jpg",
     },
     {
+      id: "social-club",
       title: "Social Club Activities",
       description:
         "Engage in community-building events and initiatives that develop organizational, interpersonal, and leadership skills. Learn to plan and execute social projects that create meaningful connections.",
@@ -178,8 +211,10 @@ export const CoursesSection = (): JSX.Element => {
       iconBgColor: "bg-[#3364e1]",
       buttonBgColor: "bg-[#3364e1]",
       titleColor: "text-[#0d104d]",
+      image: "/courses/social-club-course.jpg",
     },
     {
+      id: "cultural-club",
       title: "Cultural Club Activities",
       description:
         "Explore diverse artistic expressions, traditions, and cultural practices through interactive workshops and collaborative projects. Develop creativity and cross-cultural appreciation through hands-on experiences.",
@@ -187,6 +222,7 @@ export const CoursesSection = (): JSX.Element => {
       iconBgColor: "bg-[#f48c06]",
       buttonBgColor: "bg-[#f48c06]",
       titleColor: "text-[#faa332]",
+      image: "/courses/cultural-course.jpg",
     },
   ];
 
