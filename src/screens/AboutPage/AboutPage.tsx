@@ -11,25 +11,25 @@ const AboutPage: React.FC = () => {
     {
       name: "Dr. Priya Sharma",
       position: "Program Director",
-      image: "/placeholder.svg?height=400&width=400",
+      image: "/Faculty/female.png",
       bio: "Dr. Sharma brings 15 years of experience in curriculum development and liberal arts education, with a focus on interdisciplinary approaches to learning.",
     },
     {
       name: "Prof. Raj Mehta",
       position: "Coordinator, Liberal Learning",
-      image: "/placeholder.svg?height=400&width=400",
+      image: "/Faculty/male.png",
       bio: "Prof. Mehta specializes in integrating traditional disciplines with modern pedagogical techniques to create immersive learning experiences.",
     },
     {
       name: "Dr. Anita Desai",
       position: "Faculty Mentor",
-      image: "/placeholder.svg?height=400&width=400",
+      image: "/Faculty/female.png",
       bio: "With expertise in cross-cultural studies and experiential education, Dr. Desai helps students connect theoretical learning with practical applications.",
     },
     {
       name: "Prof. Vikram Singh",
       position: "Technical Skills Advisor",
-      image: "/placeholder.svg?height=400&width=400",
+      image: "/Faculty/male.png",
       bio: "Prof. Singh bridges the gap between liberal arts and technical disciplines, helping students develop well-rounded skill sets for the modern workplace.",
     },
   ];

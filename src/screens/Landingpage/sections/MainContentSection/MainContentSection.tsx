@@ -37,7 +37,7 @@ export const MainContentSection = (): JSX.Element => {
         {/* Left Content */}
         <div className="flex-1">
           <div className="relative mb-12">
-            <div className="w-[73px] h-[73px] rounded-full bg-[#f4b667] absolute -left-4 -top-4" />
+            <div className="w-[73px] h-[73px] rounded-full bg-[#f4b667] absolute -left-4 -top-4 -z-10" />
             <h2 className="text-4xl leading-[57.6px] pl-9 font-poppins">
               <span className="font-medium text-[#2f327d]">
                 Sustainable development Goals,
