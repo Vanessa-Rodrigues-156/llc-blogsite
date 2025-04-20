@@ -441,7 +441,7 @@ const CoursesPage: React.FC = () => {
                 </Button>
                 <Button 
                   variant="outline" 
-                  className="border-white text-white hover:bg-white/10 px-8 py-3 text-lg font-medium rounded-full"
+                  className="border-white text-[#3465e1] hover:text-white hover:bg-white/10 px-8 py-3 text-lg font-medium rounded-full"
                 >
                   Download Course Guide
                 </Button>
