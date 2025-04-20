@@ -218,11 +218,11 @@ const AboutPage: React.FC = () => {
               >
                 <Card className="overflow-hidden border-none shadow-lg">
                   <CardContent className="p-0">
-                    <div className="h-[280px] overflow-hidden">
+                    <div className="h-fit w-full overflow-hidden">
                       <img 
-                        src={member.image} 
-                        alt={member.name} 
-                        className="w-full h-full object-cover"
+                      src={member.image} 
+                      alt={member.name} 
+                      className="w-full h-full object-cover"
                       />
                     </div>
                     <div className="p-6">
