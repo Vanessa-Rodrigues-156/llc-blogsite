@@ -78,7 +78,7 @@ const AboutPage: React.FC = () => {
             >
               <div className="w-full h-[450px] rounded-2xl overflow-hidden">
                 <img 
-                  src="/rectangle-21.png" 
+                  src="/placeholder.svg?height=450&width=600" 
                   alt="Students collaborating" 
                   className="w-full h-full object-cover"
                 />
@@ -218,11 +218,11 @@ const AboutPage: React.FC = () => {
               >
                 <Card className="overflow-hidden border-none shadow-lg">
                   <CardContent className="p-0">
-                    <div className="h-fit w-full overflow-hidden">
+                    <div className="h-[280px] overflow-hidden">
                       <img 
-                      src={member.image} 
-                      alt={member.name} 
-                      className="w-full h-full object-cover"
+                        src={member.image} 
+                        alt={member.name} 
+                        className="w-full h-full object-cover"
                       />
                     </div>
                     <div className="p-6">

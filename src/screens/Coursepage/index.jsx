@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import Navigation from "../../components/Navigation/Navigation";
 import Footer from "../../components/Footer/Footer";
@@ -8,11 +8,9 @@ export default function CoursePage() {
   const { courseId } = useParams();
   const [course, setCourse] = useState(null);
   const [loading, setLoading] = useState(true);
-  const [activeSlide, setActiveSlide] = useState(0);
-  const carouselRef = useRef(null);
-  const [animationEnabled, setAnimationEnabled] = useState(true);
-
+  
   useEffect(() => {
+    // baad me add api here to get data from the api or orm 
     const coursesData = [
       {
         id: "sketching",
@@ -104,7 +102,7 @@ export default function CoursePage() {
           {
             title: "Portfolio Development",
             description: "Create a collection of work that demonstrates your skills and artistic growth.",
-            image: "/rectangle-33.png"
+            image: "/group-young-people-library-1.png"
           }
         ]
       },
@@ -204,54 +202,13 @@ export default function CoursePage() {
         }
       ]
     };
-
+    
+    // Simulate network delay
     setTimeout(() => {
       setCourse(selectedCourse);
       setLoading(false);
     }, 300);
   }, [courseId]);
-
-  const nextSlide = () => {
-    if (course?.mediaGallery) {
-      setActiveSlide((prev) => (prev + 1) % course.mediaGallery.length);
-    }
-  };
-
-  const prevSlide = () => {
-    if (course?.mediaGallery) {
-      setActiveSlide((prev) => (prev - 1 + course.mediaGallery.length) % course.mediaGallery.length);
-    }
-  };
-
-  const getTestimonialPosition = (index) => {
-    const positions = [
-      'left-[10%] top-[20%] w-52 h-44 z-30',
-      'right-[15%] top-[15%] w-48 h-40 z-20',
-      'left-[15%] bottom-[15%] w-56 h-44 z-40',
-      'right-[20%] bottom-[20%] w-44 h-40 z-10',
-      'left-[40%] top-[35%] w-52 h-44 z-25',
-    ];
-    return positions[index % positions.length];
-  };
-
-  const getDecorativeBubbleStyle = (index) => {
-    const sizes = ['h-16 w-16', 'h-20 w-20', 'h-12 w-12', 'h-24 w-24', 'h-14 w-14'];
-    const positions = [
-      'left-[5%] top-[10%]',
-      'right-[8%] top-[30%]',
-      'left-[20%] bottom-[10%]',
-      'right-[25%] bottom-[15%]',
-      'left-[60%] top-[20%]',
-      'right-[40%] top-[60%]',
-      'left-[70%] bottom-[25%]',
-      'right-[70%] bottom-[45%]',
-    ];
-    return `
-      ${positions[index % positions.length]} 
-      ${sizes[index % sizes.length]} 
-      absolute rounded-full z-${(index % 5) + 5}
-    `;
-  };
 
   if (loading) {
     return (
@@ -262,247 +219,99 @@ export default function CoursePage() {
   }
 
   return (
-    <div className="flex flex-col min-h-screen bg-gray-50">
+    <div className="flex flex-col min-h-screen">
       <Navigation />
-      <header>
-        <img src="/header.png" className="w-full mt-16" alt="Header"></img>
+      <header >
+        <img src="/header.png" className="w-full mt-16"></img>
       </header>
 
-      <div className="w-full flex py-6 bg-white shadow-sm">
-        <div className="max-w-6xl mx-auto justify-center">
-          <h1 className="text-3xl md:text-4xl font-bold">
-            <span className="text-[#3465e1]">{course.title}: </span>
-            <span className="text-[#49bbbd]">{course.subtitle}</span>
-          </h1>
-          <div className="flex flex-wrap items-center justify-center gap-4 mt-2">
-            <span className="text-[#696983] bg-gray-100 px-3 py-1 rounded-full text-sm">{course.level}</span>
-            <span className="text-[#696983] bg-gray-100 px-3 py-1 rounded-full text-sm">{course.duration}</span>
-            <span className="text-[#696983] bg-gray-100 px-3 py-1 rounded-full text-sm">{course.category}</span>
-          </div>
+      <div className="w-full px-4 py-2 max-w-6xl mx-auto">
+        <h1 className="text-3xl md:text-4xl font-bold">
+          <span className="text-[#3465e1]">{course.title}: </span>
+          <span className="text-[#49bbbd]">{course.subtitle}</span>
+        </h1>
+        <div className="flex items-center gap-4 mt-2">
+          <span className="text-[#696983] bg-gray-100 px-3 py-1 rounded-full text-sm">{course.level}</span>
+          <span className="text-[#696983] bg-gray-100 px-3 py-1 rounded-full text-sm">{course.duration}</span>
+          <span className="text-[#696983] bg-gray-100 px-3 py-1 rounded-full text-sm">{course.category}</span>
         </div>
       </div>
 
-      <div className="w-full max-w-9xl lg:max-w-full mx-auto py-8 px-4 grid grid-cols-1 lg:grid-cols-3 gap-8">
-        <div className="lg:col-span-2 space-y-8">
-          <div className="relative rounded-xl overflow-hidden">
-            <img
-              src={course.image}
-              alt={course.title}
-              className="w-full h-[350px] object-cover"
-            />
-          </div>
-          
-          <section className="bg-white p-6 rounded-xl shadow-sm">
-            <h2 className="text-2xl font-bold text-[#3465e1] mb-4">Course Introduction</h2>
-            <div className="prose max-w-none text-[#696983]">
-              <p className="text-lg leading-relaxed">{course.description}</p>
-              <p className="mt-4">
-                This comprehensive course is designed to provide you with both theoretical knowledge and practical skills. 
-                Whether you're just starting out or looking to enhance existing abilities, this course offers a structured 
-                pathway to mastery with personalized guidance from industry experts.
-              </p>
-            </div>
-          </section>
+      {/* Main banner image */}
+      <div className="w-full max-w-6xl mx-auto relative my-6">
+        <img
+          src={course.image}
+          alt={course.title}
+          className="w-full h-[400px] object-cover rounded-xl"
+        />
+        <div className="absolute bottom-4 left-4 bg-white/80 backdrop-blur-sm p-4 rounded-lg max-w-md">
+          <h2 className="text-xl font-bold text-[#3465e1]">Instructor: {course.instructor}</h2>
+          <p className="text-[#696983]">{course.description}</p>
+        </div>
+      </div>
 
-          <section className="bg-white p-6 rounded-xl shadow-sm">
-            <h2 className="text-2xl font-bold text-[#3465e1] mb-4">Course Syllabus</h2>
-            <div className="space-y-4">
-              {course.syllabus?.map((item, index) => (
-                <div 
-                  key={index}
-                  className="border-l-4 border-[#49bbbd] pl-4 py-2"
-                >
-                  <h3 className="font-bold text-lg">{item.week}: {item.topic}</h3>
-                  <p className="text-[#696983]">{item.content}</p>
-                </div>
-              ))}
-            </div>
-          </section>
+      {/* Course outcomes section */}
+      <section className="w-full px-4 py-8 max-w-6xl mx-auto">
+        <div className="flex justify-between items-center mb-4">
+          <h2 className="text-2xl font-bold">Course Outcomes:</h2>
+          <Link to="/courses" className="text-[#49bbbd]">
+            Back to all courses
+          </Link>
+        </div>
 
-          <section className="bg-white p-6 rounded-xl shadow-sm">
-            <h2 className="text-2xl font-bold text-[#3465e1] mb-4">Course Media Gallery</h2>
-            <div className="relative">
-              <div ref={carouselRef} className="overflow-hidden rounded-lg">
-                <div className="flex transition-transform duration-300 ease-in-out" style={{ transform: `translateX(-${activeSlide * 100}%)` }}>
-                  {course.mediaGallery?.map((item, index) => (
-                    <div key={index} className="min-w-full w-full">
-                      {item.type === 'image' ? (
-                        <img 
-                          src={item.src} 
-                          alt={item.caption} 
-                          className="w-full h-[400px] object-cover"
-                        />
-                      ) : (
-                        <iframe
-                          className="w-full h-[400px]"
-                          src={item.src}
-                          title={item.caption}
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                          allowFullScreen
-                        ></iframe>
-                      )}
-                      <div className="bg-[#3465e1]/80 text-white p-4">
-                        <p>{item.caption}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-              
-              <button 
-                onClick={prevSlide}
-                className="absolute left-0 top-1/2 -translate-y-1/2 bg-white/80 rounded-full p-2 shadow-md ml-2"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6 text-[#3465e1]">
-                  <path d="m15 18-6-6 6-6" />
-                </svg>
-              </button>
-              <button 
-                onClick={nextSlide}
-                className="absolute right-0 top-1/2 -translate-y-1/2 bg-white/80 rounded-full p-2 shadow-md mr-2"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6 text-[#3465e1]">
-                  <path d="m9 18 6-6-6-6" />
-                </svg>
-              </button>
-              
-              <div className="flex justify-center mt-4 gap-2">
-                {course.mediaGallery?.map((_, index) => (
-                  <button
-                    key={index}
-                    onClick={() => setActiveSlide(index)}
-                    className={`h-3 w-3 rounded-full ${activeSlide === index ? 'bg-[#3465e1]' : 'bg-gray-300'}`}
+        {/* Carousel */}
+        <div className="relative">
+          <div className="flex overflow-x-auto gap-4 pb-4 hide-scrollbar">
+            {course.outcomes.map((outcome, index) => (
+              <div key={index} className="min-w-[300px] max-w-[300px] bg-white rounded-lg overflow-hidden shadow-md">
+                <div className="relative h-48">
+                  <img
+                    src={outcome.image}
+                    alt={outcome.title}
+                    className="absolute top-0 left-0 w-full h-full object-cover"
                   />
-                ))}
-              </div>
-            </div>
-          </section>
-          <section className="bg-white p-6 rounded-xl shadow-sm">
-            <div className="relative h-[70vh] lg:max-h-[200vh] w-full">
-          {course.testimonials?.map((testimonial, index) => {
-                if (index < 5) {
-                  return (
-                    <div
-                      key={index}
-                      className={`absolute ${getTestimonialPosition(index)} bg-white/90 backdrop-blur-sm shadow-lg rounded-lg p-4 overflow-hidden
-                        ${animationEnabled ? 'animate-float-' + ((index % 3) + 1) : ''}`}
-                      style={{
-                        transform: `rotate(${(index % 3) - 1}deg)`,
-                      }}
-                    >
-                      <div className="flex flex-col h-full justify-between">
-                        <div>
-                          <div className="flex items-center mb-2">
-                            {[...Array(5)].map((_, i) => (
-                              <svg 
-                                key={i} 
-                                className={`w-4 h-4 ${i < testimonial.rating ? 'text-yellow-400' : 'text-gray-300'}`}
-                                aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg" 
-                                fill="currentColor" 
-                                viewBox="0 0 22 20"
-                              >
-                                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-                              </svg>
-                            ))}
-                          </div>
-                          <p className="text-sm italic text-[#696983] line-clamp-3">"{testimonial.comment}"</p>
-                        </div>
-                        <p className="text-[#3465e1] font-bold text-sm mt-2 self-end">— {testimonial.name}</p>
-                      </div>
-                    </div>
-                  );
-                }
-                return null;
-              })}
-              
-              {[...Array(8)].map((_, index) => (
-                <div
-                  key={`decor-${index}`}
-                  className={`${getDecorativeBubbleStyle(index)} 
-                    bg-gradient-to-br ${index % 2 === 0 ? 'from-[#49bbbd]/30 to-[#3465e1]/30' : 'from-[#3465e1]/20 to-[#49bbbd]/20'}
-                    ${animationEnabled ? 'animate-float-' + ((index % 3) + 1) : ''}`}
-                />
-              ))}
-              </div>
-          </section>
-
-          <section className="bg-white p-6 rounded-xl shadow-sm">
-            <h2 className="text-2xl font-bold text-[#3465e1] mb-4">What You'll Learn</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              {course.outcomes.map((outcome, index) => (
-                <div key={index} className="bg-gray-50 rounded-lg overflow-hidden shadow-sm">
-                  <div className="relative h-40">
-                    <img
-                      src={outcome.image}
-                      alt={outcome.title}
-                      className="absolute top-0 left-0 w-full h-full object-cover"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
-                    <div className="absolute bottom-0 left-0 p-3 text-white font-bold">
-                      {outcome.title}
-                    </div>
-                  </div>
-                  <div className="p-3 space-y-2">
-                    <p className="text-sm text-[#696983]">
-                      {outcome.description}
-                    </p>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                  <div className="absolute bottom-0 left-0 p-4 text-white font-bold text-xl">
+                    {outcome.title}
                   </div>
                 </div>
-              ))}
-            </div>
-          </section>
-        </div>
-
-        <div className="space-y-6">
-          <div className="bg-white rounded-xl shadow-sm overflow-hidden sticky top-24">
-            <div className="relative h-48">
-              <img 
-                src={course.instructorImage || "/instructor-profile.jpg"} 
-                alt={course.instructor}
-                className="absolute top-0 left-0 w-full h-full object-cover"  
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
-              <div className="absolute bottom-0 left-0 p-4">
-                <h3 className="text-white text-xl font-bold">Your Instructor</h3>
-              </div>
-            </div>
-            
-            <div className="p-4">
-              <h4 className="text-lg font-bold text-[#3465e1] mb-2">{course.instructor}</h4>
-              <p className="text-sm text-[#696983] mb-4">{course.instructorBio}</p>
-              
-              <div className="space-y-3">
-                <div className="flex justify-between text-sm">
-                  <span className="text-[#696983]">Duration:</span>
-                  <span className="font-medium">{course.duration}</span>
-                </div>
-                <div className="flex justify-between text-sm">
-                  <span className="text-[#696983]">Level:</span>
-                  <span className="font-medium">{course.level}</span>
-                </div>
-                <div className="flex justify-between text-sm">
-                  <span className="text-[#696983]">Category:</span>
-                  <span className="font-medium">{course.category}</span>
+                <div className="p-4 space-y-2">
+                  <p className="text-sm text-[#696983]">
+                    • {outcome.description}
+                  </p>
                 </div>
               </div>
-              
-              <Button 
-                className="bg-[#3465e1] text-white hover:bg-[#2854c8] w-full mt-6 rounded-full"
-              >
-                Register For This Course
-              </Button>
-              
-              <Link 
-                to="/courses" 
-                className="block text-center text-[#49bbbd] hover:underline text-sm mt-4"
-              >
-                Browse All Courses
-              </Link>
-            </div>
+            ))}
           </div>
+
+          {/* Navigation arrows */}
+          <button className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 bg-white rounded-full p-2 shadow-md">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6 text-[#3465e1]">
+              <path d="m15 18-6-6 6-6" />
+            </svg>
+          </button>
+          <button className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 bg-white rounded-full p-2 shadow-md">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6 text-[#3465e1]">
+              <path d="m9 18 6-6-6-6" />
+            </svg>
+          </button>
         </div>
-      </div>
+      </section>
+      
+      {/* Registration Section */}
+      <section className="w-full px-4 py-8 max-w-6xl mx-auto mb-16">
+        <div className="bg-[#f5f7ff] rounded-xl p-8 text-center">
+          <h2 className="text-2xl font-bold mb-4">Ready to enroll in this course?</h2>
+          <p className="text-[#696983] mb-6 max-w-2xl mx-auto">
+            Registration for this course is now open. Secure your spot and begin your journey toward expanding your knowledge and skills.
+          </p>
+          <Button 
+            className="bg-[#3465e1] text-white hover:bg-[#2854c8] px-8 py-3 text-lg font-medium rounded-full"
+          >
+            Register For This Course
+          </Button>
+        </div>
+      </section>
 
       <Footer />
     </div>
