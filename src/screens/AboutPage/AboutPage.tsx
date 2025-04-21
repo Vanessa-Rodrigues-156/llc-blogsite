@@ -249,6 +249,7 @@ const AboutPage: React.FC = () => {
             </p>
             <Button 
               className="px-10 py-5 bg-white text-[#3465e1] rounded-full font-semibold text-xl hover:bg-opacity-90 transition-colors"
+            onClick={() => window.location.href = "/courses"}
             >
               Browse Our Courses
             </Button>

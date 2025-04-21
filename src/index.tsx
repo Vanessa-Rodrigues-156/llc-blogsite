@@ -5,7 +5,7 @@ import { Landingpage } from "./screens/Landingpage/Landingpage";
 import AboutPage from "./screens/AboutPage/AboutPage";
 import CoursesPage from "./screens/CoursesPage/CoursesPage";
 import CoursePage from "./screens/Coursepage/index";
-
+import UploadVideo from "./screens/UploadVideo/index";
 createRoot(document.getElementById("app") as HTMLElement).render(
   <StrictMode>
     <BrowserRouter basename="/">
@@ -16,7 +16,8 @@ createRoot(document.getElementById("app") as HTMLElement).render(
         <Route path="/courses/:courseId" element={<CoursePage />} />
         <Route path="*" element={<Landingpage />} />
         {/* Fallback route to handle any unmatched paths */}
-    
+        <Route path="/upload" element={<UploadVideo />} />
+        {/* Route for uploading videos */}
       </Routes>
     </BrowserRouter>
   </StrictMode>,
