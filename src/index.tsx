@@ -5,7 +5,6 @@ import { Landingpage } from "./screens/Landingpage/Landingpage";
 import AboutPage from "./screens/AboutPage/AboutPage";
 import CoursesPage from "./screens/CoursesPage/CoursesPage";
 import CoursePage from "./screens/Coursepage/index";
-import "./styles/global.css";
 
 createRoot(document.getElementById("app") as HTMLElement).render(
   <StrictMode>

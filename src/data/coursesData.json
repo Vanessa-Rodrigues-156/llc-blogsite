@@ -1,0 +1,1101 @@
+{
+  "courses": [
+    {
+      "id": "sketching",
+      "title": "Sketching",
+      "subtitle": "Visual Arts & Expression",
+      "category": "Arts",
+      "level": "Beginner",
+      "duration": "12 weeks",
+      "instructor": "Prof. Maya Patel",
+      "description": "Sketching is about generating and communicating ideas. This course is intended for student who wishes to get better at sketching and recording information graphically.",
+      "fullDescription": "Develop your artistic skills through this hands-on sketching course. Learn various techniques from basic line drawing to advanced shading, helping you express creativity and enhance visual communication skills. Whether you're a complete beginner or looking to refine existing talents, this course offers a structured approach to mastering the fundamentals of sketching while encouraging personal creative expression.",
+      "image": "/courses/sketching.jpeg",
+      "bgColor": "bg-[#f5e4da]",
+      "iconBgColor": "bg-[#3364e1]",
+      "instructorBio": "With over 15 years of experience teaching visual arts, Prof. Patel has helped hundreds of students discover their artistic potential. Her work has been featured in national galleries and she holds a Master's degree in Fine Arts from the National Institute of Design.",
+      "instructorImage": "/Faculty/female.png",
+      "mediaGallery": [
+        { "type": "image", "src": "/courses/art-course.jpg", "caption": "Students working on gesture drawing techniques" },
+        { "type": "image", "src": "/group-young-people-library-1.png", "caption": "Portfolio review session" },
+        { "type": "video", "src": "https://www.youtube.com/embed/dQw4w9WgXcQ", "caption": "Introduction to perspective drawing" }
+      ],
+      "syllabus": [
+        {
+          "week": "Week 1-2",
+          "topic": "Fundamentals of Drawing",
+          "content": "Introduction to materials, basic line work, geometric shapes, and proportion."
+        },
+        {
+          "week": "Week 3-4",
+          "topic": "Shading Techniques",
+          "content": "Value scales, hatching, cross-hatching, and creating volume through light and shadow."
+        },
+        {
+          "week": "Week 5-6",
+          "topic": "Perspective Drawing",
+          "content": "One-point, two-point perspective, atmospheric perspective, and creating depth."
+        },
+        {
+          "week": "Week 7-8",
+          "topic": "Figure Drawing",
+          "content": "Human proportions, gesture drawing, contour drawing of the human form."
+        },
+        {
+          "week": "Week 9-10",
+          "topic": "Still Life & Nature",
+          "content": "Composition techniques, texture rendering, botanical and object studies."
+        },
+        {
+          "week": "Week 11-12",
+          "topic": "Personal Project",
+          "content": "Developing and completing a final project showcasing acquired skills."
+        }
+      ],
+      "testimonials": [
+        {
+          "name": "Rahul S.",
+          "comment": "This course transformed how I see the world around me. Prof. Patel's guidance helped me develop skills I never thought I had!",
+          "rating": 5
+        },
+        {
+          "name": "Priya M.",
+          "comment": "The structured approach to teaching sketching fundamentals gave me confidence to pursue art professionally.",
+          "rating": 5
+        },
+        {
+          "name": "Vikram J.",
+          "comment": "Worth every minute! The techniques I learned have enhanced my architectural drawings significantly.",
+          "rating": 4
+        },
+        {
+          "name": "Ananya D.",
+          "comment": "As a complete beginner, I found the course perfectly paced and incredibly supportive.",
+          "rating": 5
+        },
+        {
+          "name": "Karan T.",
+          "comment": "The feedback from Prof. Patel was invaluable for my growth as an artist.",
+          "rating": 4
+        }
+      ],
+      "outcomes": [
+        {
+          "title": "Basic Drawing Techniques",
+          "description": "Master foundational skills including line work, shading, and perspective drawing.",
+          "image": "/courses/art-course.jpg"
+        },
+        {
+          "title": "Creative Expression",
+          "description": "Develop your unique artistic voice through guided exercises and personal projects.",
+          "image": "/group-students-with-teacher-laboratory-1.png"
+        },
+        {
+          "title": "Portfolio Development",
+          "description": "Create a collection of work that demonstrates your skills and artistic growth.",
+          "image": "/group-young-people-library-1.png"
+        }
+      ]
+    },
+    {
+      "id": "personality-development",
+      "title": "Personality Development and People Management",
+      "subtitle": "Professional Growth & Leadership",
+      "category": "Personal Development",
+      "level": "Intermediate",
+      "duration": "8 weeks",
+      "instructor": "Dr. Ravi Kumar",
+      "description": "The importance of personality development is undisputed in personal and professional life.",
+      "fullDescription": "Build confidence, improve communication, and develop leadership skills that will help you excel in both personal and professional spheres. This comprehensive course addresses key aspects of personality development including effective communication, emotional intelligence, and interpersonal skills, while introducing essential people management techniques that will enhance your ability to lead and collaborate with diverse teams.",
+      "image": "/courses/personalitydevelopment.jpeg",
+      "bgColor": "bg-[#d4eaff]",
+      "iconBgColor": "bg-[#f48c06]",
+      "instructorBio": "Dr. Kumar is a certified behavioral psychologist with 20 years of experience in corporate training. He specializes in leadership development and has helped executives at Fortune 500 companies enhance their management skills and personal effectiveness.",
+      "instructorImage": "/Faculty/male.png",
+      "mediaGallery": [
+        { "type": "image", "src": "/courses/leadership-course.jpg", "caption": "Group workshop on communication skills" },
+        { "type": "image", "src": "/confident-teacher-explaining-lesson-pupils-1.png", "caption": "Leadership simulation exercise" },
+        { "type": "video", "src": "https://www.youtube.com/embed/dQw4w9WgXcQ", "caption": "Introduction to emotional intelligence" }
+      ],
+      "syllabus": [
+        {
+          "week": "Week 1",
+          "topic": "Self-Awareness & Assessment",
+          "content": "Understanding personality traits, personal strengths, and areas for development."
+        },
+        {
+          "week": "Week 2",
+          "topic": "Communication Mastery",
+          "content": "Verbal and non-verbal communication, active listening, and articulation skills."
+        },
+        {
+          "week": "Week 3",
+          "topic": "Emotional Intelligence",
+          "content": "Recognizing, understanding, and managing emotions in yourself and others."
+        },
+        {
+          "week": "Week 4",
+          "topic": "Conflict Resolution",
+          "content": "Strategies for addressing and resolving interpersonal and team conflicts."
+        },
+        {
+          "week": "Week 5-6",
+          "topic": "Leadership Fundamentals",
+          "content": "Leadership styles, motivating teams, and effective delegation techniques."
+        },
+        {
+          "week": "Week 7-8",
+          "topic": "Advanced People Management",
+          "content": "Coaching, performance feedback, and building high-performing teams."
+        }
+      ],
+      "testimonials": [
+        {
+          "name": "Amit K.",
+          "comment": "This course completely transformed my leadership approach. I now have much better relationships with my team.",
+          "rating": 5
+        },
+        {
+          "name": "Neha G.",
+          "comment": "Dr. Kumar's insights into emotional intelligence have been game-changing for my career progression.",
+          "rating": 5
+        },
+        {
+          "name": "Sanjay P.",
+          "comment": "The conflict resolution techniques alone were worth the entire course. Highly recommended!",
+          "rating": 4
+        },
+        {
+          "name": "Lakshmi R.",
+          "comment": "A perfect blend of theory and practical exercises. I apply these skills daily in both work and personal life.",
+          "rating": 5
+        },
+        {
+          "name": "Vikash T.",
+          "comment": "The most comprehensive personality development course I've attended. Transformed my approach to leadership.",
+          "rating": 5
+        }
+      ],
+      "outcomes": [
+        {
+          "title": "Enhanced Communication",
+          "description": "Develop clear, persuasive communication skills for various professional contexts.",
+          "image": "/confident-teacher-explaining-lesson-pupils-1.png"
+        },
+        {
+          "title": "Leadership Skills",
+          "description": "Learn key principles to inspire and guide teams toward shared goals.",
+          "image": "/group-students-with-teacher-laboratory-1.png"
+        },
+        {
+          "title": "Conflict Management",
+          "description": "Master techniques to address and resolve interpersonal conflicts constructively.",
+          "image": "/school-hallway-class-students-1.png"
+        }
+      ]
+    },
+    {
+      "id": "work-life-balance",
+      "title": "Work Life Balance",
+      "subtitle": "Personal Wellness & Productivity",
+      "category": "Personal Development",
+      "level": "All Levels",
+      "duration": "6 weeks",
+      "instructor": "Dr. Amita Shah",
+      "description": "Discover strategies to harmonize professional responsibilities with personal well-being and maintain mental health.",
+      "fullDescription": "In today's fast-paced world, maintaining a healthy balance between work and personal life has become increasingly challenging. This course provides practical strategies to help you manage your time effectively, reduce stress, and cultivate habits that promote both professional success and personal fulfillment. Learn evidence-based techniques for setting boundaries, prioritizing tasks, and creating sustainable routines.",
+      "image": "/courses/worklifebalance.jpeg",
+      "bgColor": "bg-[#f5e5da]",
+      "iconBgColor": "bg-[#3364e1]",
+      "instructorBio": "Dr. Shah holds a Ph.D. in Organizational Psychology and specializes in workplace wellness programs. With her background in both clinical practice and corporate consultancy, she brings a unique perspective on creating sustainable work-life integration strategies.",
+      "instructorImage": "/Faculty/female.png",
+      "mediaGallery": [
+        { "type": "image", "src": "/courses/wellbeing-course.jpg", "caption": "Mindfulness practice session" },
+        { "type": "image", "src": "/group-students-with-teacher-laboratory-1.png", "caption": "Time management workshop" },
+        { "type": "video", "src": "https://www.youtube.com/embed/dQw4w9WgXcQ", "caption": "Introduction to stress management techniques" }
+      ],
+      "syllabus": [
+        {
+          "week": "Week 1",
+          "topic": "Understanding Work-Life Balance",
+          "content": "Assessing current patterns, identifying stressors, and establishing personal goals."
+        },
+        {
+          "week": "Week 2",
+          "topic": "Time Management Fundamentals",
+          "content": "Prioritization techniques, planning methods, and productivity systems."
+        },
+        {
+          "week": "Week 3",
+          "topic": "Stress Management",
+          "content": "Identifying sources of stress and developing effective coping mechanisms."
+        },
+        {
+          "week": "Week 4",
+          "topic": "Setting Boundaries",
+          "content": "Creating healthy boundaries between work and personal life."
+        },
+        {
+          "week": "Week 5",
+          "topic": "Mindfulness & Self-Care",
+          "content": "Incorporating mindfulness practices and self-care routines into daily life."
+        },
+        {
+          "week": "Week 6",
+          "topic": "Creating Sustainable Change",
+          "content": "Developing a personalized plan for maintaining work-life balance long-term."
+        }
+      ],
+      "testimonials": [
+        {
+          "name": "Radhika M.",
+          "comment": "This course helped me reclaim my evenings and weekends while actually improving my work performance!",
+          "rating": 5
+        },
+        {
+          "name": "Alok J.",
+          "comment": "The mindfulness techniques Dr. Shah taught have dramatically reduced my anxiety levels.",
+          "rating": 5
+        },
+        {
+          "name": "Shreya D.",
+          "comment": "Learning to set boundaries was life-changing. I'm more productive at work and more present at home.",
+          "rating": 5
+        },
+        {
+          "name": "Nikhil P.",
+          "comment": "Practical approaches to what seemed like an impossible challenge. Highly recommended!",
+          "rating": 4
+        },
+        {
+          "name": "Meera K.",
+          "comment": "The time management strategies alone were worth the investment. My stress levels have decreased significantly.",
+          "rating": 5
+        }
+      ],
+      "outcomes": [
+        {
+          "title": "Stress Management",
+          "description": "Learn techniques to identify and manage sources of stress in work and personal life.",
+          "image": "/courses/wellbeing-course.jpg"
+        },
+        {
+          "title": "Time Management",
+          "description": "Master strategies for efficient time allocation and priority setting.",
+          "image": "/group-students-with-teacher-laboratory-1.png"
+        },
+        {
+          "title": "Mindfulness Practice",
+          "description": "Develop daily habits that enhance mental clarity and emotional balance.",
+          "image": "/confident-teacher-explaining-lesson-pupils-1.png"
+        }
+      ]
+    },
+    {
+      "id": "first-aid-self-defence",
+      "title": "First Aid and Self Defence",
+      "subtitle": "Safety & Protection Skills",
+      "category": "Skills",
+      "level": "Beginner",
+      "duration": "10 weeks",
+      "instructor": "Prof. Sanjay Verma",
+      "description": "First Aid is the temporary help given to a sick or injured person before professional medical.",
+      "fullDescription": "This essential course combines two critical life skills: emergency first aid response and practical self-defense techniques. You'll learn how to assess and respond to various medical emergencies as well as develop fundamental skills to protect yourself and others in potentially dangerous situations. The course emphasizes practical, hands-on training that builds confidence and preparedness.",
+      "image": "/courses/selfdefense.jpeg",
+      "bgColor": "bg-[#d4eaff]",
+      "iconBgColor": "bg-[#f48c06]",
+      "instructorBio": "Prof. Verma is a certified first aid instructor and holds a black belt in Krav Maga. With 15 years of experience in emergency response training and self-defense instruction, he brings practical expertise and a focus on real-world applications to his teaching.",
+      "instructorImage": "/Faculty/male.png",
+      "mediaGallery": [
+        { "type": "image", "src": "/courses/first-aid-course.jpg", "caption": "CPR training session" },
+        { "type": "image", "src": "/group-students-with-teacher-laboratory-1.png", "caption": "Self-defense technique demonstration" },
+        { "type": "video", "src": "https://www.youtube.com/embed/dQw4w9WgXcQ", "caption": "Introduction to emergency assessment" }
+      ],
+      "syllabus": [
+        {
+          "week": "Week 1-2",
+          "topic": "Emergency Assessment",
+          "content": "Scene assessment, primary survey, and activating emergency response systems."
+        },
+        {
+          "week": "Week 3-4",
+          "topic": "Basic Life Support",
+          "content": "CPR techniques, choking response, and AED operation for adults, children, and infants."
+        },
+        {
+          "week": "Week 5-6",
+          "topic": "Common Medical Emergencies",
+          "content": "Response to bleeding, shock, burns, fractures, and environmental emergencies."
+        },
+        {
+          "week": "Week 7-8",
+          "topic": "Self-Defense Fundamentals",
+          "content": "Situational awareness, defensive stance, and basic escape techniques."
+        },
+        {
+          "week": "Week 9-10",
+          "topic": "Advanced Self-Protection",
+          "content": "Pressure points, defensive strikes, and response to common threats."
+        }
+      ],
+      "testimonials": [
+        {
+          "name": "Rajesh L.",
+          "comment": "I used the first aid techniques from this course when a colleague had a medical emergency - it made a real difference!",
+          "rating": 5
+        },
+        {
+          "name": "Anita S.",
+          "comment": "The self-defense techniques are practical and easy to remember. I feel much more confident now.",
+          "rating": 5
+        },
+        {
+          "name": "Karan M.",
+          "comment": "Prof. Verma's hands-on approach to teaching makes complex techniques accessible and memorable.",
+          "rating": 4
+        },
+        {
+          "name": "Deepa R.",
+          "comment": "This course should be mandatory for everyone. The skills I learned could literally save lives.",
+          "rating": 5
+        },
+        {
+          "name": "Suresh K.",
+          "comment": "The perfect balance between theory and practice. I learned so much in just 10 weeks!",
+          "rating": 5
+        }
+      ],
+      "outcomes": [
+        {
+          "title": "Emergency Response",
+          "description": "Learn to assess situations and provide immediate assistance in various emergencies.",
+          "image": "/courses/first-aid-course.jpg"
+        },
+        {
+          "title": "Basic Self-Protection",
+          "description": "Master fundamental techniques to defend yourself in threatening situations.",
+          "image": "/group-students-with-teacher-laboratory-1.png"
+        },
+        {
+          "title": "Safety Awareness",
+          "description": "Develop heightened awareness of potential dangers and preventive approaches.",
+          "image": "/confident-teacher-explaining-lesson-pupils-1.png"
+        }
+      ]
+    },
+    {
+      "id": "fire-safety",
+      "title": "Fire Safety and Electronic Security",
+      "subtitle": "Prevention & Protection Systems",
+      "category": "Skills",
+      "level": "Beginner",
+      "duration": "8 weeks",
+      "instructor": "Dr. Vijay Singh",
+      "description": "Understand fire prevention, detection, and suppression techniques alongside modern electronic security systems.",
+      "fullDescription": "This comprehensive course covers the fundamentals of fire safety and electronic security systems. Learn about fire behavior, prevention strategies, detection technologies, and suppression methods, as well as modern electronic security solutions including surveillance, access control, and alarm systems. This practical knowledge is essential for creating safer environments at home and in the workplace.",
+      "image": "/courses/firesaftey.jpeg",
+      "bgColor": "bg-[#f5e4da]",
+      "iconBgColor": "bg-[#3364e1]",
+      "instructorBio": "Dr. Singh is a former Fire Safety Officer with 25 years of experience in both public safety departments and private security consulting. He holds multiple certifications in fire engineering and electronic security systems design.",
+      "instructorImage": "/Faculty/male.png",
+      "mediaGallery": [
+        { "type": "image", "src": "/courses/fire-safety-demo.jpg", "caption": "Fire extinguisher training" },
+        { "type": "image", "src": "/group-students-with-teacher-laboratory-1.png", "caption": "Electronic security system components" },
+        { "type": "video", "src": "https://www.youtube.com/embed/dQw4w9WgXcQ", "caption": "Introduction to fire behavior" }
+      ],
+      "syllabus": [
+        {
+          "week": "Week 1",
+          "topic": "Fire Science Fundamentals",
+          "content": "Understanding fire behavior, the fire triangle, and classes of fire."
+        },
+        {
+          "week": "Week 2",
+          "topic": "Fire Prevention Strategies",
+          "content": "Risk assessment, hazard identification, and preventive measures."
+        },
+        {
+          "week": "Week 3",
+          "topic": "Fire Detection Systems",
+          "content": "Types of detectors, alarm systems, and early warning technologies."
+        },
+        {
+          "week": "Week 4",
+          "topic": "Fire Suppression",
+          "content": "Fire extinguisher types, fixed suppression systems, and evacuation procedures."
+        },
+        {
+          "week": "Week 5-6",
+          "topic": "Electronic Security Basics",
+          "content": "Overview of security systems, risk assessment, and layered protection."
+        },
+        {
+          "week": "Week 7-8",
+          "topic": "Advanced Security Systems",
+          "content": "Access control, video surveillance, intrusion detection, and integration techniques."
+        }
+      ],
+      "testimonials": [
+        {
+          "name": "Vivek R.",
+          "comment": "This course helped me completely revamp the safety systems at our family business. Incredibly valuable information!",
+          "rating": 5
+        },
+        {
+          "name": "Shilpa G.",
+          "comment": "Dr. Singh explains complex technical concepts in an accessible way. I feel much more confident about my home security now.",
+          "rating": 5
+        },
+        {
+          "name": "Ajay M.",
+          "comment": "The hands-on fire extinguisher training alone was worth the price of admission.",
+          "rating": 4
+        },
+        {
+          "name": "Poonam S.",
+          "comment": "As a property manager, the knowledge I gained from this course has been invaluable for protecting our residents.",
+          "rating": 5
+        },
+        {
+          "name": "Ravi K.",
+          "comment": "Excellent balance of theory and practical applications. Highly relevant for both home and workplace safety.",
+          "rating": 5
+        }
+      ],
+      "outcomes": [
+        {
+          "title": "Fire Prevention Knowledge",
+          "description": "Understand fire risks and implement effective preventive measures.",
+          "image": "/courses/firesaftey.jpeg"
+        },
+        {
+          "title": "Emergency Response Skills",
+          "description": "Learn proper use of fire suppression equipment and evacuation procedures.",
+          "image": "/group-students-with-teacher-laboratory-1.png"
+        },
+        {
+          "title": "Security System Expertise",
+          "description": "Gain knowledge about modern electronic security technologies and their applications.",
+          "image": "/confident-teacher-explaining-lesson-pupils-1.png"
+        }
+      ]
+    },
+    {
+      "id": "sports-technology",
+      "title": "Sports Technology",
+      "subtitle": "Performance Analysis & Enhancement",
+      "category": "Technology",
+      "level": "Intermediate",
+      "duration": "12 weeks",
+      "instructor": "Prof. Nitin Mehta",
+      "description": "Explore cutting-edge technologies revolutionizing sports performance, analysis, and training methods.",
+      "fullDescription": "This innovative course explores how technology is transforming the world of sports. From wearable fitness trackers to advanced motion capture systems, you'll learn about tools that enhance athletic performance, prevent injuries, and provide detailed analysis of techniques and strategies. The course combines technical knowledge with practical applications for athletes, coaches, and sports enthusiasts.",
+      "image": "/courses/sportsTechnology.jpeg",
+      "bgColor": "bg-[#d4eaff]",
+      "iconBgColor": "bg-[#f48c06]",
+      "instructorBio": "Prof. Mehta combines his expertise in sports science and engineering to specialize in performance technology. He has consulted with national sports teams and developed several innovative training systems that have been adopted by professional athletes worldwide.",
+      "instructorImage": "/Faculty/male.png",
+      "mediaGallery": [
+        { "type": "image", "src": "/courses/sports-tech-course.jpg", "caption": "Motion capture analysis session" },
+        { "type": "image", "src": "/group-students-with-teacher-laboratory-1.png", "caption": "Wearable technology demonstration" },
+        { "type": "video", "src": "https://www.youtube.com/embed/dQw4w9WgXcQ", "caption": "Introduction to performance metrics" }
+      ],
+      "syllabus": [
+        {
+          "week": "Week 1-2",
+          "topic": "Introduction to Sports Technology",
+          "content": "Historical development, current landscape, and future trends in sports tech."
+        },
+        {
+          "week": "Week 3-4",
+          "topic": "Wearable Technology",
+          "content": "Fitness trackers, smart clothing, and physiological monitoring systems."
+        },
+        {
+          "week": "Week 5-6",
+          "topic": "Performance Analysis Systems",
+          "content": "Video analysis, motion capture, and biomechanical assessment tools."
+        },
+        {
+          "week": "Week 7-8",
+          "topic": "Data Analytics in Sports",
+          "content": "Collecting, analyzing, and interpreting performance metrics and statistics."
+        },
+        {
+          "week": "Week 9-10",
+          "topic": "Recovery & Injury Prevention Tech",
+          "content": "Monitoring systems, rehabilitation technology, and preventive approaches."
+        },
+        {
+          "week": "Week 11-12",
+          "topic": "Emerging Technologies",
+          "content": "AR/VR training, AI coaching systems, and next-generation sports equipment."
+        }
+      ],
+      "testimonials": [
+        {
+          "name": "Arjun S.",
+          "comment": "As a cricket coach, the performance analysis techniques I learned have transformed how I work with my players.",
+          "rating": 5
+        },
+        {
+          "name": "Nisha R.",
+          "comment": "Prof. Mehta's knowledge of cutting-edge technology is impressive. This course was ahead of the curve!",
+          "rating": 5
+        },
+        {
+          "name": "Dhruv M.",
+          "comment": "The data analysis section alone improved my training programs dramatically. Great investment!",
+          "rating": 4
+        },
+        {
+          "name": "Pooja T.",
+          "comment": "I'm a professional athlete, and this course helped me understand how to use technology to prevent injuries. Invaluable!",
+          "rating": 5
+        },
+        {
+          "name": "Kunal G.",
+          "comment": "The perfect blend of technical knowledge and practical applications for real-world sports settings.",
+          "rating": 5
+        }
+      ],
+      "outcomes": [
+        {
+          "title": "Performance Metrics",
+          "description": "Learn to collect, analyze and interpret athletic performance data.",
+          "image": "/courses/sports-tech-course.jpg"
+        },
+        {
+          "title": "Wearable Technology",
+          "description": "Understand how modern wearable devices can enhance training and performance.",
+          "image": "/group-students-with-teacher-laboratory-1.png"
+        },
+        {
+          "title": "Digital Coaching Tools",
+          "description": "Master various digital platforms used in modern sports training and analysis.",
+          "image": "/confident-teacher-explaining-lesson-pupils-1.png"
+        }
+      ]
+    },
+    {
+      "id": "athletics",
+      "title": "Athletics",
+      "subtitle": "Track & Field Foundations",
+      "category": "Sports",
+      "level": "All Levels",
+      "duration": "16 weeks",
+      "instructor": "Coach Rahul Dravid",
+      "description": "Develop fundamental athletic skills through comprehensive training in various track and field disciplines.",
+      "fullDescription": "This comprehensive athletics course covers a wide range of track and field disciplines, from sprinting and distance running to jumping and throwing events. You'll develop fundamental athletic abilities including speed, strength, endurance, coordination, and technique while receiving professional coaching in various event categories. The program accommodates participants of all fitness levels while encouraging personal improvement and competitive readiness.",
+      "image": "/courses/athletics.jpeg",
+      "bgColor": "bg-[#f5e5da]",
+      "iconBgColor": "bg-[#3364e1]",
+      "instructorBio": "Coach Dravid is a former national champion in middle-distance running who has trained Olympic-level athletes. With over 25 years of coaching experience, he specializes in developing well-rounded athletic abilities and event-specific techniques.",
+      "instructorImage": "/Faculty/male.png",
+      "mediaGallery": [
+        { "type": "image", "src": "/courses/athletics-training.jpg", "caption": "Sprint technique training" },
+        { "type": "image", "src": "/group-students-with-teacher-laboratory-1.png", "caption": "Long jump practice session" },
+        { "type": "video", "src": "https://www.youtube.com/embed/dQw4w9WgXcQ", "caption": "Introduction to proper running form" }
+      ],
+      "syllabus": [
+        {
+          "week": "Week 1-2",
+          "topic": "Athletic Foundations",
+          "content": "Assessment, fundamental movement skills, and conditioning principles."
+        },
+        {
+          "week": "Week 3-4",
+          "topic": "Sprint Techniques",
+          "content": "Proper form, start techniques, acceleration, and sprint-specific conditioning."
+        },
+        {
+          "week": "Week 5-6",
+          "topic": "Middle & Long Distance",
+          "content": "Pacing, breathing techniques, race strategy, and endurance building."
+        },
+        {
+          "week": "Week 7-8",
+          "topic": "Jumping Disciplines",
+          "content": "Long jump, high jump, and triple jump techniques and training methods."
+        },
+        {
+          "week": "Week 9-10",
+          "topic": "Throwing Events",
+          "content": "Shot put, discus, and javelin fundamentals and progression drills."
+        },
+        {
+          "week": "Week 11-12",
+          "topic": "Combined Training",
+          "content": "Multi-event training approaches and balanced athletic development."
+        },
+        {
+          "week": "Week 13-14",
+          "topic": "Competition Preparation",
+          "content": "Performance peaking, mental preparation, and competition strategies."
+        },
+        {
+          "week": "Week 15-16",
+          "topic": "Performance Assessment",
+          "content": "Time trials, personal record attempts, and future development planning."
+        }
+      ],
+      "testimonials": [
+        {
+          "name": "Aditya K.",
+          "comment": "I improved my 100m time by nearly a full second after implementing Coach Dravid's techniques!",
+          "rating": 5
+        },
+        {
+          "name": "Ritu S.",
+          "comment": "The program's holistic approach helped me discover my talent for javelin throwing, which I'd never tried before.",
+          "rating": 5
+        },
+        {
+          "name": "Mohit J.",
+          "comment": "Coach Dravid's attention to proper form prevented injuries and significantly improved my performance.",
+          "rating": 5
+        },
+        {
+          "name": "Tanvi P.",
+          "comment": "As a complete beginner, I was worried about keeping up, but the program was perfectly adapted to my level.",
+          "rating": 4
+        },
+        {
+          "name": "Raj G.",
+          "comment": "The mental preparation techniques were just as valuable as the physical training. A complete program!",
+          "rating": 5
+        }
+      ],
+      "outcomes": [
+        {
+          "title": "Athletic Performance",
+          "description": "Develop foundational speed, strength, and endurance for track and field events.",
+          "image": "/courses/athletics.jpeg"
+        },
+        {
+          "title": "Technical Proficiency",
+          "description": "Master proper technique for various athletic events and movements.",
+          "image": "/group-students-with-teacher-laboratory-1.png"
+        },
+        {
+          "title": "Competitive Readiness",
+          "description": "Develop physical and mental preparation strategies for athletic competition.",
+          "image": "/confident-teacher-explaining-lesson-pupils-1.png"
+        }
+      ]
+    },
+    {
+      "id": "aerobics-fitness",
+      "title": "Aerobics and Fitness",
+      "subtitle": "Cardiovascular Health & Conditioning",
+      "category": "Sports",
+      "level": "All Levels",
+      "duration": "12 weeks",
+      "instructor": "Ms. Roshni Padate",
+      "description": "Enhance cardiovascular health, strength, and flexibility through dynamic aerobic exercises and fitness routines.",
+      "fullDescription": "This energetic course combines various aerobic exercise modalities with fitness training to improve overall health, endurance, and body composition. You'll experience a variety of workout styles including high and low impact aerobics, circuit training, interval workouts, and flexibility sessions. The program accommodates participants of all fitness levels while providing progressions to continuously challenge and improve your physical condition.",
+      "image": "/courses/aerobics.jpeg",
+      "bgColor": "bg-[#d4eaff]",
+      "iconBgColor": "bg-[#f48c06]",
+      "instructorBio": "Ms. Padate holds multiple fitness certifications including ACE Group Fitness Instructor and ACSM Exercise Physiologist. With 12 years of experience leading fitness programs at premium health clubs, she specializes in creating engaging, effective workouts for participants of all levels.",
+      "instructorImage": "/Faculty/female.png",
+      "mediaGallery": [
+        { "type": "image", "src": "/courses/aerobics-class.jpg", "caption": "Group aerobics session" },
+        { "type": "image", "src": "/group-students-with-teacher-laboratory-1.png", "caption": "Fitness assessment workshop" },
+        { "type": "video", "src": "https://www.youtube.com/embed/dQw4w9WgXcQ", "caption": "Introduction to proper aerobic exercise form" }
+      ],
+      "syllabus": [
+        {
+          "week": "Week 1",
+          "topic": "Fitness Assessment & Foundations",
+          "content": "Initial assessments, basic movement patterns, and exercise safety principles."
+        },
+        {
+          "week": "Week 2-3",
+          "topic": "Cardio Basics",
+          "content": "Building aerobic capacity through low-impact exercises and proper technique."
+        },
+        {
+          "week": "Week 4-5",
+          "topic": "Aerobic Progression",
+          "content": "Introducing higher intensity movements, combinations, and routines."
+        },
+        {
+          "week": "Week 6-7",
+          "topic": "Strength Integration",
+          "content": "Adding resistance training components to enhance overall fitness."
+        },
+        {
+          "week": "Week 8-9",
+          "topic": "Circuit & Interval Training",
+          "content": "High-intensity interval formats and multi-station circuit workouts."
+        },
+        {
+          "week": "Week 10-11",
+          "topic": "Flexibility & Recovery",
+          "content": "Stretching techniques, mobility work, and recovery strategies."
+        },
+        {
+          "week": "Week 12",
+          "topic": "Program Design",
+          "content": "Creating personalized fitness routines and long-term exercise planning."
+        }
+      ],
+      "testimonials": [
+        {
+          "name": "Kavita R.",
+          "comment": "I've lost 8kg and gained so much energy! Ms. Padate makes every session challenging but fun.",
+          "rating": 5
+        },
+        {
+          "name": "Avinash P.",
+          "comment": "As someone with previous knee issues, I appreciated how the exercises were modified to keep me safe while still being effective.",
+          "rating": 5
+        },
+        {
+          "name": "Shalini T.",
+          "comment": "The variety of routines kept me engaged throughout the 12 weeks. Never got bored!",
+          "rating": 4
+        },
+        {
+          "name": "Rohit M.",
+          "comment": "My cardio endurance has improved dramatically. I can now easily run 5km, which was impossible before!",
+          "rating": 5
+        },
+        {
+          "name": "Leela K.",
+          "comment": "Beyond the physical benefits, the stress relief and mental clarity I've gained have been life-changing.",
+          "rating": 5
+        }
+      ],
+      "outcomes": [
+        {
+          "title": "Cardiovascular Health",
+          "description": "Develop improved heart health, endurance, and aerobic capacity.",
+          "image": "/courses/aerobics.jpeg"
+        },
+        {
+          "title": "Physical Strength",
+          "description": "Build functional strength through targeted resistance exercises.",
+          "image": "/group-students-with-teacher-laboratory-1.png"
+        },
+        {
+          "title": "Movement Competency",
+          "description": "Enhance coordination, balance, and body awareness through varied exercise modalities.",
+          "image": "/confident-teacher-explaining-lesson-pupils-1.png"
+        }
+      ]
+    },
+    {
+      "id": "photography",
+      "title": "Fundamentals of Photography",
+      "subtitle": "Visual Storytelling & Technical Mastery",
+      "category": "Arts",
+      "level": "Beginner",
+      "duration": "10 weeks",
+      "instructor": "Mr. Anil Kapoor",
+      "description": "Master the technical and creative aspects of photography from camera settings to composition principles.",
+      "fullDescription": "This comprehensive photography course covers both technical skills and artistic principles to help you create compelling images. From understanding your camera's features to mastering composition, lighting, and post-processing, you'll develop the complete skill set needed to confidently capture beautiful photographs. Through hands-on projects and personalized feedback, you'll build a strong foundation in photographic principles while developing your unique creative vision.",
+      "image": "/courses/photography.jpeg",
+      "bgColor": "bg-[#f5e4da]",
+      "iconBgColor": "bg-[#3364e1]",
+      "instructorBio": "Mr. Kapoor is an award-winning photographer with over 20 years of professional experience in portrait, landscape, and commercial photography. His work has been featured in national publications, and he brings both technical expertise and artistic insight to his teaching approach.",
+      "instructorImage": "/Faculty/male.png",
+      "mediaGallery": [
+        { "type": "image", "src": "/courses/photography-workshop.jpg", "caption": "Portrait lighting workshop" },
+        { "type": "image", "src": "/group-young-people-library-1.png", "caption": "Field photography session" },
+        { "type": "video", "src": "https://www.youtube.com/embed/dQw4w9WgXcQ", "caption": "Introduction to camera settings and exposure" }
+      ],
+      "syllabus": [
+        {
+          "week": "Week 1",
+          "topic": "Camera Fundamentals",
+          "content": "Understanding camera types, controls, and basic operations."
+        },
+        {
+          "week": "Week 2",
+          "topic": "Exposure Triangle",
+          "content": "Mastering aperture, shutter speed, and ISO interactions."
+        },
+        {
+          "week": "Week 3",
+          "topic": "Composition Principles",
+          "content": "Rule of thirds, leading lines, balance, and visual storytelling."
+        },
+        {
+          "week": "Week 4",
+          "topic": "Natural Light Photography",
+          "content": "Working with available light, golden hour, and challenging lighting conditions."
+        },
+        {
+          "week": "Week 5-6",
+          "topic": "Portrait Photography",
+          "content": "Subject direction, flattering angles, and capturing authentic expressions."
+        },
+        {
+          "week": "Week 7",
+          "topic": "Landscape & Nature",
+          "content": "Techniques for capturing compelling outdoor and natural scenes."
+        },
+        {
+          "week": "Week 8",
+          "topic": "Introduction to Flash",
+          "content": "Basic artificial lighting techniques and equipment."
+        },
+        {
+          "week": "Week 9-10",
+          "topic": "Post-Processing Essentials",
+          "content": "Basic editing workflows using industry-standard software."
+        }
+      ],
+      "testimonials": [
+        {
+          "name": "Rohan S.",
+          "comment": "Finally understanding manual mode changed everything! Mr. Kapoor explains technical concepts in such an accessible way.",
+          "rating": 5
+        },
+        {
+          "name": "Priyanka T.",
+          "comment": "The composition techniques transformed my photos immediately. I see the world differently now.",
+          "rating": 5
+        },
+        {
+          "name": "Manish G.",
+          "comment": "The field sessions were incredibly valuable - nothing beats hands-on learning with expert guidance.",
+          "rating": 4
+        },
+        {
+          "name": "Divya K.",
+          "comment": "My family is amazed by how much my photography has improved in just 10 weeks!",
+          "rating": 5
+        },
+        {
+          "name": "Nitin R.",
+          "comment": "The post-processing section helped me develop my own distinctive style. Fantastic course overall!",
+          "rating": 5
+        }
+      ],
+      "outcomes": [
+        {
+          "title": "Technical Mastery",
+          "description": "Understand and control camera settings to achieve desired results in any situation.",
+          "image": "/courses/photography.jpeg"
+        },
+        {
+          "title": "Compositional Skill",
+          "description": "Create visually compelling images through effective composition and framing.",
+          "image": "/group-students-with-teacher-laboratory-1.png"
+        },
+        {
+          "title": "Creative Vision",
+          "description": "Develop your unique photographic eye and storytelling ability.",
+          "image": "/confident-teacher-explaining-lesson-pupils-1.png"
+        }
+      ]
+    },
+    {
+      "id": "cinematography",
+      "title": "Cinematography",
+      "subtitle": "Visual Storytelling Through Motion",
+      "category": "Arts",
+      "level": "Intermediate",
+      "duration": "14 weeks",
+      "instructor": "Dr. Monica Tushar Khanore",
+      "description": "Discover the art of visual storytelling through motion pictures, lighting, composition, and camera movement.",
+      "fullDescription": "This in-depth cinematography course explores the technical and artistic elements of moving image creation. You'll learn professional techniques for camera operation, lighting design, composition, and movement that effectively convey story and emotion. Through hands-on projects and analysis of masterful cinematography, you'll develop the skills to create visually compelling video content across various formats and genres.",
+      "image": "/courses/cinematography.jpeg",
+      "bgColor": "bg-[#d4eaff]",
+      "iconBgColor": "bg-[#f48c06]",
+      "instructorBio": "Dr. Khanore holds a doctorate in Film Studies and has worked as a cinematographer on award-winning independent films. She combines academic expertise with practical industry experience to provide students with both theoretical foundations and real-world applications.",
+      "instructorImage": "/Faculty/female.png",
+      "mediaGallery": [
+        { "type": "image", "src": "/courses/cinematography-workshop.jpg", "caption": "Camera movement workshop" },
+        { "type": "image", "src": "/group-young-people-library-1.png", "caption": "Lighting setup demonstration" },
+        { "type": "video", "src": "https://www.youtube.com/embed/dQw4w9WgXcQ", "caption": "Introduction to visual storytelling" }
+      ],
+      "syllabus": [
+        {
+          "week": "Week 1-2",
+          "topic": "Fundamentals of Motion Picture",
+          "content": "History, technology evolution, and visual language of cinematography."
+        },
+        {
+          "week": "Week 3-4",
+          "topic": "Camera Systems",
+          "content": "Digital cinema cameras, lenses, and support equipment."
+        },
+        {
+          "week": "Week 5-6",
+          "topic": "Composition for Motion",
+          "content": "Framing, shot sizes, visual hierarchy, and compositional rules."
+        },
+        {
+          "week": "Week 7-8",
+          "topic": "Lighting Theory & Practice",
+          "content": "Three-point lighting, lighting ratios, and creative lighting approaches."
+        },
+        {
+          "week": "Week 9-10",
+          "topic": "Camera Movement",
+          "content": "Motivating movement, equipment techniques, and emotional impact."
+        },
+        {
+          "week": "Week 11-12",
+          "topic": "Visual Storytelling",
+          "content": "Scene coverage, continuity, and developing visual style."
+        },
+        {
+          "week": "Week 13-14",
+          "topic": "Advanced Techniques",
+          "content": "Special situations, effects, and emerging technologies."
+        }
+      ],
+      "testimonials": [
+        {
+          "name": "Sameer K.",
+          "comment": "Dr. Khanore's analysis of iconic film scenes transformed my understanding of visual storytelling completely!",
+          "rating": 5
+        },
+        {
+          "name": "Anushka P.",
+          "comment": "The hands-on lighting workshops were invaluable. I now feel confident creating professional-looking setups.",
+          "rating": 5
+        },
+        {
+          "name": "Vinay R.",
+          "comment": "Learning proper camera movement techniques took my videos from amateur to professional quality.",
+          "rating": 5
+        },
+        {
+          "name": "Meher J.",
+          "comment": "The balance of theory and practice was perfect. I've already applied these skills to paid projects!",
+          "rating": 4
+        },
+        {
+          "name": "Aryan S.",
+          "comment": "Dr. Khanore's industry experience added tremendous value through real-world insights and tips.",
+          "rating": 5
+        }
+      ],
+      "outcomes": [
+        {
+          "title": "Technical Proficiency",
+          "description": "Master camera operation, settings, and equipment for professional motion picture capture.",
+          "image": "/courses/cinematography.jpeg"
+        },
+        {
+          "title": "Visual Storytelling",
+          "description": "Create compelling visual narratives through intentional framing, lighting, and movement.",
+          "image": "/group-students-with-teacher-laboratory-1.png"
+        },
+        {
+          "title": "Lighting Design",
+          "description": "Develop skills to create mood, atmosphere, and visual hierarchy through lighting.",
+          "image": "/confident-teacher-explaining-lesson-pupils-1.png"
+        }
+      ]
+    },
+    {
+      "id": "music-appreciation",
+      "title": "Music Appreciation and Composition",
+      "subtitle": "Understanding & Creating Music",
+      "category": "Arts",
+      "level": "All Levels",
+      "duration": "12 weeks",
+      "instructor": "Prof. Kalpana Deorukhkar",
+      "description": "Develop a deeper understanding of musical elements, genres, and history while learning fundamental composition techniques.",
+      "fullDescription": "This comprehensive music course combines appreciation and composition to enhance your relationship with music. You'll explore diverse musical traditions, learn to identify elements like melody, harmony, and rhythm, and gain historical context for major musical developments. Additionally, you'll develop basic composition skills, allowing you to create your own musical pieces while deepening your appreciation for music across various genres and eras.",
+      "image": "/courses/music-appreciation.jpeg",
+      "bgColor": "bg-[#f5e5da]",
+      "iconBgColor": "bg-[#3364e1]",
+      "instructorBio": "Prof. Deorukhkar holds degrees in both Western Classical Music and Indian Classical Music. As a composer and performer with 25 years of experience, she brings a global perspective to music education and specializes in making music theory accessible to students of all backgrounds.",
+      "instructorImage": "/Faculty/female.png",
+      "mediaGallery": [
+        { "type": "image", "src": "/courses/music-workshop.jpg", "caption": "Composition workshop session" },
+        { "type": "image", "src": "/group-young-people-library-1.png", "caption": "Musical analysis activity" },
+        { "type": "video", "src": "https://www.youtube.com/embed/dQw4w9WgXcQ", "caption": "Introduction to musical elements" }
+      ],
+      "syllabus": [
+        {
+          "week": "Week 1-2",
+          "topic": "Musical Fundamentals",
+          "content": "Elements of music: melody, harmony, rhythm, dynamics, and form."
+        },
+        {
+          "week": "Week 3-4",
+          "topic": "Western Classical Music",
+          "content": "Evolution of Western art music from Medieval to Contemporary periods."
+        },
+        {
+          "week": "Week 5",
+          "topic": "Indian Classical Traditions",
+          "content": "Fundamentals of Hindustani and Carnatic music systems."
+        },
+        {
+          "week": "Week 6",
+          "topic": "World Music Exploration",
+          "content": "Musical traditions from Africa, Latin America, and Asia."
+        },
+        {
+          "week": "Week 7-8",
+          "topic": "Popular Music Evolution",
+          "content": "Development of jazz, rock, pop, electronic, and contemporary genres."
+        },
+        {
+          "week": "Week 9-10",
+          "topic": "Composition Basics",
+          "content": "Melody writing, chord progressions, and arranging fundamentals."
+        },
+        {
+          "week": "Week 11-12",
+          "topic": "Personal Composition Project",
+          "content": "Creating original musical works with personalized guidance."
+        }
+      ],
+      "testimonials": [
+        {
+          "name": "Anand R.",
+          "comment": "I've been listening to music all my life, but this course taught me how to truly hear it. Amazing experience!",
+          "rating": 5
+        },
+        {
+          "name": "Priya N.",
+          "comment": "Prof. Deorukhkar made music theory accessible and engaging. I never thought I could compose my own music!",
+          "rating": 5
+        },
+        {
+          "name": "Vikrant L.",
+          "comment": "The global perspective on music traditions expanded my appreciation immensely.",
+          "rating": 4
+        },
+        {
+          "name": "Shruti S.",
+          "comment": "As a hobbyist musician, this course filled crucial gaps in my understanding and improved my playing significantly.",
+          "rating": 5
+        },
+        {
+          "name": "Rajan B.",
+          "comment": "The composition project was challenging but incredibly rewarding. I'm so proud of what I created!",
+          "rating": 5
+        }
+      ],
+      "outcomes": [
+        {
+          "title": "Musical Literacy",
+          "description": "Develop the ability to identify and understand various musical elements and structures.",
+          "image": "/courses/music-appreciation.jpeg"
+        },
+        {
+          "title": "Historical Context",
+          "description": "Gain knowledge of musical developments across different eras and cultures.",
+          "image": "/group-students-with-teacher-laboratory-1.png"
+        },
+        {
+          "title": "Composition Skills",
+          "description": "Create original musical pieces using fundamental composition techniques.",
+          "image": "/confident-teacher-explaining-lesson-pupils-1.png"
+        }
+      ]
+    }
+  ]
+}

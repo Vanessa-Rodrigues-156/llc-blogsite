@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import Navigation from "../../components/Navigation/Navigation";
@@ -7,8 +7,9 @@ import { Button } from "../../components/ui/button";
 import { Card, CardContent } from "../../components/ui/card";
 import { Input } from "../../components/ui/input";
 import { Badge } from "../../components/ui/badge";
+import courseData from "../../data/coursesData.json";
 
-interface Course {
+export interface Course {
   id: string;
   title: string;
   category: string;
@@ -19,235 +20,49 @@ interface Course {
   image: string;
   bgColor: string;
   iconBgColor: string;
+  subtitle?: string;
+  instructorBio?: string;
+  instructorImage?: string;
+  mediaGallery?: {
+    type: string;
+    src: string;
+    caption: string;
+  }[];
+  syllabus?: {
+    week: string;
+    topic: string;
+    content: string;
+  }[];
+  testimonials?: {
+    name: string;
+    comment: string;
+    rating: number;
+  }[];
+  outcomes?: {
+    title: string;
+    description: string;
+    image: string;
+  }[];
 }
 
 const CoursesPage: React.FC = () => {
   // All available categories for filtering
-  const categories = ["All", "Arts", "Technology", "Skills", "Personal Development", "Sports", "Social"];
+  const [categories, setCategories] = useState<string[]>(["All"]);
   
   // State for filters
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All");
   
   // Course data
-  const coursesData: Course[] = [
-    {
-      id: "sketching",
-      title: "Sketching",
-      category: "Arts",
-      level: "Beginner",
-      duration: "12 weeks",
-      instructor: "Prof. Maya Patel",
-      description: "Sketching is about generating and communicating ideas. This course is intended for student who wishes to get better at sketching and recording information graphically.",
-      image: "/courses/sketching.jpeg",
-      bgColor: "bg-[#f5e4da]",
-      iconBgColor: "bg-[#3364e1]",
-    },
-    {
-      id: "personality-development",
-      title: "Personality Development and People Management",
-      category: "Personal Development",
-      level: "Intermediate",
-      duration: "8 weeks",
-      instructor: "Dr. Ravi Kumar",
-      description: " The importance of personality development is undisputed in personal and professional life.",
-      image: "/courses/personalitydevelopment.jpeg",
-      bgColor: "bg-[#d4eaff]",
-      iconBgColor: "bg-[#f48c06]",
-    },
-    {
-      id: "work-life-balance",
-      title: "Work Life Balance",
-      category: "Personal Development",
-      level: "All Levels",
-      duration: "6 weeks",
-      instructor: "Dr. Amita Shah",
-      description: "Discover strategies to harmonize professional responsibilities with personal well-being and maintain mental health.",
-      image: "/courses/worklifebalance.jpeg",
-      bgColor: "bg-[#f5e5da]",
-      iconBgColor: "bg-[#3364e1]",
-    },
-    {
-      id: "first-aid-self-defence",
-      title: "First Aid and Self Defence",
-      category: "Skills",
-      level: "Beginner",
-      duration: "10 weeks",
-      instructor: "Prof. Sanjay Verma",
-      description: "First Aidis the temporary help given to a sick or injured person before professional medical. ",
-      image: "/courses/selfdefense.jpeg",
-      bgColor: "bg-[#d4eaff]",
-      iconBgColor: "bg-[#f48c06]",
-    },
-    {
-      id: "fire-safety",
-      title: "Fire Safety and Electronic Security",
-      category: "Skills",
-      level: "Beginner",
-      duration: "8 weeks",
-      instructor: "Dr. Vijay Singh",
-      description: "Understand fire prevention, detection, and suppression techniques alongside modern electronic security systems.",
-      image: "/courses/firesaftey.jpeg",
-      bgColor: "bg-[#f5e4da]",
-      iconBgColor: "bg-[#3364e1]",
-    },
-    {
-      id: "sports-technology",
-      title: "Sports Technology",
-      category: "Technology",
-      level: "Intermediate",
-      duration: "12 weeks",
-      instructor: "Prof. Nitin Mehta",
-      description: "Explore cutting-edge technologies revolutionizing sports performance, analysis, and training methods.",
-      image: "/courses/sportsTechnology.jpeg",
-      bgColor: "bg-[#d4eaff]",
-      iconBgColor: "bg-[#f48c06]",
-    },
-    {
-      id: "athletics",
-      title: "Athletics",
-      category: "Sports",
-      level: "All Levels",
-      duration: "16 weeks",
-      instructor: "Coach Rahul Dravid",
-      description: "Develop fundamental athletic skills through comprehensive training in various track and field disciplines.",
-      image: "/courses/athletics.jpeg",
-      bgColor: "bg-[#f5e5da]",
-      iconBgColor: "bg-[#3364e1]",
-    },
-    {
-      id: "aerobics-fitness",
-      title: "Aerobics and Fitness",
-      category: "Sports",
-      level: "All Levels",
-      duration: "12 weeks",
-      instructor: "Ms. Roshni Padate",
-      description: "Enhance cardiovascular health, strength, and flexibility through dynamic aerobic exercises and fitness routines.",
-      image: "/courses/aerobics.jpeg",
-      bgColor: "bg-[#d4eaff]",
-      iconBgColor: "bg-[#f48c06]",
-    },
-    {
-      id: "photography",
-      title: "Fundamentals of Photography",
-      category: "Arts",
-      level: "Beginner",
-      duration: "10 weeks",
-      instructor: "Mr. Anil Kapoor",
-      description: "Master the technical and creative aspects of photography from camera settings to composition principles.",
-      image: "/courses/photography.jpeg",
-      bgColor: "bg-[#f5e4da]",
-      iconBgColor: "bg-[#3364e1]",
-    },
-    {
-      id: "cinematography",
-      title: "Cinematography",
-      category: "Arts",
-      level: "Intermediate",
-      duration: "14 weeks",
-      instructor: "Dr. Monica Tushar Khanore",
-      description: "Discover the art of visual storytelling through motion pictures, lighting, composition, and camera movement.",
-      image: "/courses/cinematography.jpeg",
-      bgColor: "bg-[#d4eaff]",
-      iconBgColor: "bg-[#f48c06]",
-    },
-    {
-      id: "music-appreciation",
-      title: "Music Appreciation and Composition",
-      category: "Arts",
-      level: "All Levels",
-      duration: "12 weeks",
-      instructor: "Prof. Kalpana Deorukhkar",
-      description: "Develop a deeper understanding of musical elements, genres, and history while learning fundamental composition techniques.",
-      image: "/courses/music-appreciation.jpeg",
-      bgColor: "bg-[#f5e5da]",
-      iconBgColor: "bg-[#3364e1]",
-    },
-    {
-      id: "garden-design",
-      title: "Garden Design and Maintenance",
-      category: "Skills",
-      level: "Beginner",
-      duration: "8 weeks",
-      instructor: "Prof. Astha Bhatia",
-      description: "Learn principles of landscape design and plant care techniques to create and maintain beautiful garden spaces.",
-      image: "/courses/garden-design.jpeg",
-      bgColor: "bg-[#d4eaff]",
-      iconBgColor: "bg-[#f48c06]",
-    },
-    {
-      id: "social-media",
-      title: "Managing Social Media",
-      category: "Technology",
-      level: "Intermediate",
-      duration: "6 weeks",
-      instructor: "Prof.Ankita Ambrule",
-      description: "Master strategies for effective social media management across platforms for building meaningful online presence.",
-      image: "/courses/social-media.jpeg",
-      bgColor: "bg-[#f5e4da]",
-      iconBgColor: "bg-[#3364e1]",
-    },
-    {
-      id: "server-network",
-      title: "Server and Network Maintenance",
-      category: "Technology",
-      level: "Advanced",
-      duration: "10 weeks",
-      instructor: "Mr. Mashesh Sharma",
-      description: "Gain practical experience in managing server infrastructure and network systems with troubleshooting techniques.",
-      image: "/courses/server-network.jpg",
-      bgColor: "bg-[#d4eaff]",
-      iconBgColor: "bg-[#f48c06]",
-    },
-    {
-      id: "electrical-safety",
-      title: "Electrical Safety",
-      category: "Skills",
-      level: "Beginner",
-      duration: "8 weeks",
-      instructor: "Prof. Ajay Kholi",
-      description: "Learn crucial principles and practices of electrical safety in various environments and emergency responses.",
-      image: "/courses/electrical-safety.jpg",
-      bgColor: "bg-[#f5e5da]",
-      iconBgColor: "bg-[#3364e1]",
-    },
-    {
-      id: "mentoring-school-children",
-      title: "Mentoring of School Children",
-      category: "Social",
-      level: "All Levels",
-      duration: "12 weeks",
-      instructor: "Dr. Sujata Deshmukh",
-      description: "Develop effective mentoring skills to positively impact young students' academic and personal growth.",
-      image: "/courses/mentoring-school-children.jpeg",
-      bgColor: "bg-[#d4eaff]",
-      iconBgColor: "bg-[#f48c06]",
-    },
-    {
-      id: "social-club",
-      title: "Social Club Activities",
-      category: "Social",
-      level: "All Levels",
-      duration: "Ongoing",
-      instructor: "Prof. Parshvi Shah",
-      description: "Engage in community-building events that develop organizational, interpersonal, and leadership skills.",
-      image: "/courses/social-club.jpeg",
-      bgColor: "bg-[#f5e5da]",
-      iconBgColor: "bg-[#3364e1]",
-    },
-    {
-      id: "cultural-club",
-      title: "Cultural Club Activities",
-      category: "Social",
-      level: "All Levels",
-      duration: "Ongoing",
-      instructor: "Dr. Meera Krishnan",
-      description: "Explore diverse artistic expressions, traditions, and cultural practices through interactive workshops.",
-      image: "/courses/cultural-club.jpeg",
-      bgColor: "bg-[#d4eaff]",
-      iconBgColor: "bg-[#f48c06]",
-    },
-  ];
+  const [coursesData, setCoursesData] = useState<Course[]>([]);
+  
+  // Load course data from JSON file
+  useEffect(() => {
+    // Extract and deduplicate categories
+    const allCategories = ["All", ...Array.from(new Set(courseData.courses.map((course: Course) => course.category))) as string[]];
+    setCategories(allCategories);
+    setCoursesData(courseData.courses);
+  }, []);
   
   // Filter courses based on search term and category
   const filteredCourses = coursesData.filter(course => {
