@@ -16,9 +16,9 @@
       "instructorBio": "With over 15 years of experience teaching visual arts, Prof. Patel has helped hundreds of students discover their artistic potential. Her work has been featured in national galleries and she holds a Master's degree in Fine Arts from the National Institute of Design.",
       "instructorImage": "/Faculty/female.png",
       "mediaGallery": [
-        { "type": "image", "src": "/courses/art-course.jpg", "caption": "Students working on gesture drawing techniques" },
-        { "type": "image", "src": "/group-young-people-library-1.png", "caption": "Portfolio review session" },
-        { "type": "video", "src": "https://www.youtube.com/embed/dQw4w9WgXcQ", "caption": "Introduction to perspective drawing" }
+        { "type": "image", "src": "/courses/sketch.png", "caption": "Students working on gesture drawing techniques" },
+        { "type": "image", "src": "/courses/sketch1.jpeg", "caption": "Portfolio review session" },
+        { "type": "video", "src": "https://youtu.be/RbYd0g_4OFQ", "caption": "Introduction to sketching" }
       ],
       "syllabus": [
         {
