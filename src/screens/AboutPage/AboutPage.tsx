@@ -9,28 +9,28 @@ const AboutPage: React.FC = () => {
   // About page content
   const teamMembers = [
     {
-      name: "Dr. Priya Sharma",
-      position: "Program Director",
-      image: "/Faculty/female.png",
-      bio: "Dr. Sharma brings 15 years of experience in curriculum development and liberal arts education, with a focus on interdisciplinary approaches to learning.",
-    },
-    {
-      name: "Prof. Raj Mehta",
-      position: "Coordinator, Liberal Learning",
+      name: "Dr.Surendra Singh Rathod",
+      position: "Principal",
       image: "/Faculty/male.png",
-      bio: "Prof. Mehta specializes in integrating traditional disciplines with modern pedagogical techniques to create immersive learning experiences.",
+      bio: "Dr.Surendra Singh Rathod has distinguished academic with a Ph.D. in Semiconductor Device and VLSI Technology from IIT Roorkee. He is an expert in VLSI,and neuromorphic engineering with over 25 years of academic and research experience.",
     },
     {
-      name: "Dr. Anita Desai",
-      position: "Faculty Mentor",
-      image: "/Faculty/female.png",
-      bio: "With expertise in cross-cultural studies and experiential education, Dr. Desai helps students connect theoretical learning with practical applications.",
-    },
-    {
-      name: "Prof. Vikram Singh",
-      position: "Technical Skills Advisor",
+      name: "Dr. Deepak Vishnu Bhoir",
+      position: "Professor and Dean, Academics",
       image: "/Faculty/male.png",
-      bio: "Prof. Singh bridges the gap between liberal arts and technical disciplines, helping students develop well-rounded skill sets for the modern workplace.",
+      bio: "Dr. Deepak Vishnu Bhoir is a seasoned academician with 32 years of teaching experience, currently serving as Professor and Dean Academics, specializing in Biomedical Instrumentation, VLSI, and MEMS Technology.",
+    },
+    {
+      name: "Dr. Sapna Prabhu",
+      position: "Professor, Head of Department ",
+      image: "/Faculty/female.png",
+      bio: "Dr. Sapna Prabhu: Professor and Head of Electronics & Computer Science at Fr. CRCE, with expertise in embedded systems, computer architecture, and 20+ research publications.",
+    },
+    {
+      name: "Dr. Sujata P. Deshmukh",
+      position: "Professor, Head of Department",
+      image: "/Faculty/female.png",
+      bio: "Dr. Sujata Deshmukh: Professor and HOD of Computer Engineering at Fr. CRCE, with a strong background in AI, cloud computing, and e-commerce, and over 25 publications.",
     },
   ];
 
@@ -78,7 +78,7 @@ const AboutPage: React.FC = () => {
             >
               <div className="w-full h-[450px] rounded-2xl overflow-hidden">
                 <img 
-                  src="/placeholder.svg?height=450&width=600" 
+                  src="/courses/student.jpg" 
                   alt="Students collaborating" 
                   className="w-full h-full object-cover"
                 />
