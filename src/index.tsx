@@ -14,6 +14,9 @@ createRoot(document.getElementById("app") as HTMLElement).render(
         <Route path="/about" element={<AboutPage />} />
         <Route path="/courses" element={<CoursesPage />} />
         <Route path="/courses/:courseId" element={<CoursePage />} />
+        <Route path="*" element={<Landingpage />} />
+        {/* Fallback route to handle any unmatched paths */}
+    
       </Routes>
     </BrowserRouter>
   </StrictMode>,
