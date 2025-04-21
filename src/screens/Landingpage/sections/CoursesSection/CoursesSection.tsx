@@ -30,18 +30,19 @@ export const CoursesSection = (): JSX.Element => {
       id: "sketching",
       title: "Sketching",
       description:
-        "Develop your artistic skills through this hands-on sketching course. Learn various techniques from basic line drawing to advanced shading, helping you express creativity and enhance visual communication skills.",
+        "Sketching is about generating and communicating ideas. Improving your sketching skills is great addition to your workflow as a UX, UI  or product designer.  ",
       bgColor: "bg-[#f5e4da]",
       iconBgColor: "bg-[#3364e1]",
       buttonBgColor: "bg-[#3364e1]",
       titleColor: "text-[#0d104d]",
       image: "/courses/art-course.jpg",
+      
     },
     {
       id: "personality-development",
       title: "Personality Development and People Management",
       description:
-        "Build confidence, improve communication, and develop leadership skills that will help you excel in both personal and professional spheres. Learn effective techniques to manage teams and foster positive relationships.",
+        "Personality development is an important aspect of human development.This course is used to remove public speaking as one of their biggest fears of a student.",
       bgColor: "bg-[#d4eaff]",
       iconBgColor: "bg-[#f48c06]",
       buttonBgColor: "bg-[#f48c06]",
@@ -52,7 +53,7 @@ export const CoursesSection = (): JSX.Element => {
       id: "work-life-balance",
       title: "Work Life Balance",
       description:
-        "Discover strategies to harmonize professional responsibilities with personal well-being. This course provides practical tools to enhance productivity while maintaining mental health and enjoying fulfilling relationships.",
+        "Establishing a balance at work and in our personal life can be challenging.This course helps in work-life balance and provides practical strategies for achieving harmony.",
       bgColor: "bg-[#f5e5da]",
       iconBgColor: "bg-[#3364e1]",
       buttonBgColor: "bg-[#3364e1]",
@@ -63,7 +64,7 @@ export const CoursesSection = (): JSX.Element => {
       id: "first-aid-self-defence",
       title: "First Aid and Self Defence",
       description:
-        "Learn essential life-saving techniques and self-protection methods. This practical course equips you with the knowledge to respond effectively in emergencies and protect yourself in potentially dangerous situations.",
+        "This course helps for temporary help given to a sick or injured person before professional medical help also helps in self-defence. ",
       bgColor: "bg-[#d4eaff]",
       iconBgColor: "bg-[#f48c06]",
       buttonBgColor: "bg-[#f48c06]",
@@ -74,7 +75,7 @@ export const CoursesSection = (): JSX.Element => {
       id: "fire-safety",
       title: "Fire Safety and Electronic Security",
       description:
-        "Understand fire prevention, detection, and suppression techniques alongside modern electronic security systems. Gain practical knowledge on protecting spaces and people from various hazards.",
+        "Fire hazard prevention is an important life skill necessary for any human being.Course also deals with electronic safety equipment’s. ",
       bgColor: "bg-[#f5e4da]",
       iconBgColor: "bg-[#3364e1]",
       buttonBgColor: "bg-[#3364e1]",
@@ -85,7 +86,7 @@ export const CoursesSection = (): JSX.Element => {
       id: "sports-technology",
       title: "Sports Technology",
       description:
-        "Explore the cutting-edge technologies revolutionizing sports performance, analysis, and training. Learn how data analytics, wearable tech, and innovative equipment are shaping the future of athletics.",
+        "This course delves into the intersection of sports and technology, examining how advancements in technology have revolutionized.",
       bgColor: "bg-[#d4eaff]",
       iconBgColor: "bg-[#f48c06]",
       buttonBgColor: "bg-[#f48c06]",
@@ -96,7 +97,7 @@ export const CoursesSection = (): JSX.Element => {
       id: "athletics",
       title: "Athletics",
       description:
-        "Develop fundamental athletic skills through comprehensive training in various track and field disciplines. Improve strength, speed, endurance, and technique while fostering sportsmanship and competitive spirit.",
+        "This course is introduced to create a sense of self discipline and importance of fitness in a person’s life.",
       bgColor: "bg-[#f5e5da]",
       iconBgColor: "bg-[#3364e1]",
       buttonBgColor: "bg-[#3364e1]",
@@ -107,7 +108,7 @@ export const CoursesSection = (): JSX.Element => {
       id: "aerobics-fitness",
       title: "Aerobics and Fitness",
       description:
-        "Enhance cardiovascular health, strength, and flexibility through dynamic aerobic exercises and fitness routines. Learn proper techniques for effective workouts that improve overall physical well-being.",
+        "This course is designed to offer the students a wide variety of cardiovascular fitness activities in order to physical wellness.",
       bgColor: "bg-[#d4eaff]",
       iconBgColor: "bg-[#f48c06]",
       buttonBgColor: "bg-[#f48c06]",
@@ -118,7 +119,7 @@ export const CoursesSection = (): JSX.Element => {
       id: "photography",
       title: "Fundamentals of Photography",
       description:
-        "Master the technical and creative aspects of photography. From understanding camera settings to composition principles, this course helps you capture compelling images and develop your unique visual style.",
+        "This course is for students who want to have a first approach to the world of digital photography, starting with the basics of photographic. ",
       bgColor: "bg-[#f5e4da]",
       iconBgColor: "bg-[#3364e1]",
       buttonBgColor: "bg-[#3364e1]",
@@ -129,7 +130,7 @@ export const CoursesSection = (): JSX.Element => {
       id: "cinematography",
       title: "Cinematography",
       description:
-        "Discover the art of visual storytelling through motion pictures. Learn camera techniques, lighting, composition, and movement to create compelling visual narratives for film and digital media.",
+        "This course explores the principles, techniques, and aesthetics of cinematography, focusing on the visual language of film.",
       bgColor: "bg-[#d4eaff]",
       iconBgColor: "bg-[#f48c06]",
       buttonBgColor: "bg-[#f48c06]",
@@ -140,7 +141,7 @@ export const CoursesSection = (): JSX.Element => {
       id: "music-appreciation",
       title: "Music Appreciation and Composition",
       description:
-        "Develop a deeper understanding of musical elements, genres, and history while learning fundamental composition techniques. Enhance your ability to appreciate, analyze, and create diverse musical expressions.",
+        "Music appreciation and composition is a basic course aimed at the enhancement of the student's capacity to enjoy music,",
       bgColor: "bg-[#f5e5da]",
       iconBgColor: "bg-[#3364e1]",
       buttonBgColor: "bg-[#3364e1]",
@@ -151,7 +152,7 @@ export const CoursesSection = (): JSX.Element => {
       id: "garden-design",
       title: "Garden Design and Maintenance",
       description:
-        "Learn principles of landscape design and plant care techniques. This course combines theory with hands-on practice to help you create and maintain beautiful, sustainable garden spaces.",
+        "This course offers knowledge of the basics of gardening, how to design a garden and how to care for different types of plants.",
       bgColor: "bg-[#d4eaff]",
       iconBgColor: "bg-[#f48c06]",
       buttonBgColor: "bg-[#f48c06]",
@@ -173,7 +174,7 @@ export const CoursesSection = (): JSX.Element => {
       id: "server-network",
       title: "Server and Network Maintenance",
       description:
-        "Gain practical experience in managing server infrastructure and network systems. This hands-on course covers troubleshooting, security protocols, and optimization techniques essential for IT operations.",
+        "Gain practical experience in managing server infrastructure and network systems. This hands-on course covers troubleshooting and optimization techniques essential for IT operations.",
       bgColor: "bg-[#d4eaff]",
       iconBgColor: "bg-[#f48c06]",
       buttonBgColor: "bg-[#f48c06]",
@@ -195,7 +196,7 @@ export const CoursesSection = (): JSX.Element => {
       id: "mentoring-school-children",
       title: "Mentoring of School Children",
       description:
-        "Develop effective mentoring skills to positively impact young students' academic and personal growth. Learn to build trust, provide guidance, and foster development through supportive relationships.",
+        "Fr CRCE students are regularly involved in mentoring school children through IIC or other social activities/clubs. ",
       bgColor: "bg-[#d4eaff]",
       iconBgColor: "bg-[#f48c06]",
       buttonBgColor: "bg-[#f48c06]",
