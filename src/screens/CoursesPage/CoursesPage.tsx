@@ -251,12 +251,13 @@ const CoursesPage: React.FC = () => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button 
                   className="bg-white text-[#3465e1] hover:bg-gray-100 px-8 py-3 text-lg font-medium rounded-full"
-                >
+                 onClick={() => alert("Registration form coming soon!")}>
                   Register Now
                 </Button>
                 <Button 
                   variant="outline" 
-                  className="border-white text-white hover:bg-white/10 px-8 py-3 text-lg font-medium rounded-full"
+                  className="border-white text-[#3465e1] hover:text-white  hover:bg-white/10 px-8 py-3 text-lg font-medium rounded-full"
+                  onClick={()=> window.open("http://www.frcrce.ac.in/images/2024/autonomous_curriculum/syllabus/Liberal_Leanring_Courses_LLC.pdf", "_blank")}
                 >
                   Download Course Guide
                 </Button>
