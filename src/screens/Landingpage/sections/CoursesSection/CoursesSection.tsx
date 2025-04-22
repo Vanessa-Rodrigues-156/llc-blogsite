@@ -320,6 +320,7 @@ export const CoursesSection = (): JSX.Element => {
                     <div className="flex justify-center mt-auto mb-6">
                       <Button
                         className={`${course.buttonBgColor} text-white font-bold text-[22px] rounded-[51px] h-[51px] px-8 shadow-[0px_8.51px_20.43px_#3465e14c] font-['Nunito_Sans',Helvetica] hover:opacity-90 transition-opacity`}
+                        onClick={() => {window.location.href = `/courses/${course.id}`}}
                       >
                         Learn More
                       </Button>
