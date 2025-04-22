@@ -6,6 +6,9 @@ import AboutPage from "./screens/AboutPage/AboutPage";
 import CoursesPage from "./screens/CoursesPage/CoursesPage";
 import CoursePage from "./screens/Coursepage/index";
 import UploadVideo from "./screens/UploadVideo/index";
+import Login from "./screens/Login";
+import SignUp from "./screens/SignUp";
+
 createRoot(document.getElementById("app") as HTMLElement).render(
   <StrictMode>
     <BrowserRouter basename="/">
@@ -18,6 +21,8 @@ createRoot(document.getElementById("app") as HTMLElement).render(
         {/* Fallback route to handle any unmatched paths */}
         <Route path="/upload" element={<UploadVideo />} />
         {/* Route for uploading videos */}
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<SignUp />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>,

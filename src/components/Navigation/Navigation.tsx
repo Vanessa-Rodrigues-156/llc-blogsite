@@ -1,9 +1,11 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "../ui/button";
 
 const Navigation: React.FC = () => {
+  const navigate = useNavigate();
+
   const navItems = [
     { text: "Home", to: "/" },
     { text: "Courses", to: "/courses" },
@@ -52,14 +54,14 @@ const Navigation: React.FC = () => {
           <Button
             variant="outline"
             className="px-6 py-2 bg-transparent border border-[#f48c06] rounded-full font-['Poppins',Helvetica] font-medium text-[#f48c06] text-sm hover:bg-[#f48c06] hover:text-white transition-all"
-            onClick={() => console.log("Login clicked")}
+            onClick={() => navigate("/login")}
           >
             Login
           </Button>
 
           <Button
             className="px-6 py-2 bg-[#f48c06] rounded-full font-['Poppins',Helvetica] font-medium text-white text-sm hover:bg-[#e07b05] transition-colors"
-            onClick={() => console.log("Sign Up clicked")}
+            onClick={() => navigate("/signup")}
           >
             Sign Up
           </Button>
