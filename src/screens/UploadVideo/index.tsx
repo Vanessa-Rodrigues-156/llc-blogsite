@@ -23,54 +23,85 @@ const UploadVideo: React.FC = () => {
       alert("Please fill in all fields and upload a video file.");
       return;
     }
-
+  
+    const accessToken = prompt("Paste your OAuth 2.0 access token here:");
+    if (!accessToken) {
+      alert("Access token is required!");
+      return;
+    }
+  
     setUploading(true);
-
+  
     try {
-      const formData = new FormData();
-      formData.append("title", videoTitle);
-      formData.append("description", videoDescription);
-      formData.append("file", videoFile);
-      formData.append("courseName", courseName);
-
-      // Replace `YOUR_YOUTUBE_API_KEY` with your actual YouTube Data API key
-      const apiKey = "YOUR_YOUTUBE_API_KEY";
-
-      // Make a POST request to the YouTube Data API
+      const metadata = {
+        snippet: {
+          title: videoTitle,
+          description: videoDescription,
+          tags: [courseName],
+        },
+        status: {
+          privacyStatus: "public", // can be "unlisted" or "private"
+        },
+      };
+  
+      const form = new FormData();
+      form.append("snippet", JSON.stringify(metadata));
+      form.append("video", videoFile);
+  
+      //const boundary = "foo_bar_baz"; // arbitrary boundary
+  
       const response = await fetch(
-        `https://www.googleapis.com/upload/youtube/v3/videos?part=snippet,status&key=${apiKey}`,
+        "https://www.googleapis.com/upload/youtube/v3/videos?uploadType=resumable&part=snippet,status",
         {
           method: "POST",
           headers: {
-            Authorization: `Bearer YOUR_ACCESS_TOKEN`, // Replace with OAuth 2.0 access token
+            Authorization: `Bearer ${accessToken}`,
+            "Content-Type": "application/json",
           },
-          body: JSON.stringify({
-            snippet: {
-              title: videoTitle,
-              description: videoDescription,
-              tags: [courseName],
-            },
-            status: {
-              privacyStatus: "public",
-            },
-          }),
+          body: JSON.stringify(metadata),
         }
       );
-
-      if (response.ok) {
-        alert("Video uploaded successfully!");
-      } else {
-        const errorData = await response.json();
-        console.error("Error uploading video:", errorData);
-        alert("Failed to upload video. Please check the console for details.");
+  
+      if (!response.ok) {
+        const error = await response.json();
+        console.error("Error initiating upload:", error);
+        alert("Failed to initiate upload.");
+        return;
       }
-    } catch (error) {
-      console.error("Error:", error);
+  
+      const uploadUrl = response.headers.get("Location");
+      if (!uploadUrl) {
+        alert("Failed to get upload URL.");
+        return;
+      }
+  
+      // Upload the actual file to the upload URL
+      const uploadResponse = await fetch(uploadUrl, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "video/mp4",
+          "Content-Length": videoFile.size.toString(),
+        },
+        body: videoFile,
+      });
+  
+      if (uploadResponse.ok) {
+        alert("Video uploaded successfully!");
+        window.location.href = "/courses"; // Redirect to My Courses page
+      
+      } else {
+        const uploadError = await uploadResponse.json();
+        console.error("Upload failed:", uploadError);
+        alert("Video upload failed.");
+      }
+    } catch (err) {
+      console.error("Unexpected error:", err);
       alert("An error occurred while uploading the video.");
     } finally {
       setUploading(false);
     }
   };
+  
 
   return (
     <div className="bg-white min-h-screen">
