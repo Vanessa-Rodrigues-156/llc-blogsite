@@ -8,7 +8,7 @@ This project serves as a professional blogging website for an LLC, offering a sl
 ## 🟉 Presentation & Demo Video
 
 > 📹 Watch the full presentation and demonstration below:
-[![Watch the Demo](https://img.youtube.com/vi/YOUR_VIDEO_ID/maxresdefault.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
+[![Watch the Demo]((https://drive.google.com/file/d/1IeoBPKOtJBKugm5OaK-iNs15LrMWIhou/view?usp=sharing))
 *Click the image above to watch the video!*
 
 ---
