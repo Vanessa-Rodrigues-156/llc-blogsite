@@ -1,6 +1,6 @@
 # 🌟 LLC Blogsite
 
-Welcome to the **LLC Blogsite** — a modern, responsive blog platform built using **React.js**.\
+Welcome to the **LLC Blogsite** — a modern, responsive blog platform built using **React.js**, T.\
 This project serves as a professional blogging website for an LLC, offering a sleek UI, SEO optimization, and a fast browsing experience.
 
 ---
@@ -25,9 +25,9 @@ Visit the live project here:
 
 - **Frontend:** React.js
 - **Routing:** React Router DOM
-- **State Management:** React Context API / Redux (if used)
-- **Styling:** Tailwind CSS / Styled Components (if used)
-- **Hosting:** Vercel / Netlify / AWS Amplify
+- **State Management:** React Context API
+- **Styling:** Tailwind CSS 
+- **Hosting:** Vercel
 
 ---
 
@@ -36,31 +36,27 @@ Visit the live project here:
 ### Prerequisites
 
 - Node.js (v16+ recommended)
-- npm or yarn package manager
+- bun package manager
 
 ### Installation Steps
 
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/yourusername/llc-blogsite.git
+   git clone https://github.com/Vanessa-Rodrigues-156/llc-blogsite.git
    cd llc-blogsite
    ```
 
 2. **Install the dependencies**
 
    ```bash
-   npm install
-   # or
-   yarn install
+   bun install
    ```
 
 3. **Start the development server**
 
    ```bash
-   npm start
-   # or
-   yarn start
+   bun run dev
    ```
 
 4. Open your browser and navigate to:
@@ -76,9 +72,7 @@ Visit the live project here:
 To build the project for production:
 
 ```bash
-npm run build
-# or
-yarn build
+bun run build
 ```
 
 The optimized output will be located in the `build/` directory.
